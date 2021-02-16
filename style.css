@@ -16,22 +16,25 @@ body {
   font-size: 1.2rem;
 }
 
+.banner p:first-of-type {
+  margin-bottom: 1rem;
+}
+
 nav {
   position: absolute;
 }
 
 header {
-  display: flex;
+  /* display: flex; */
   font-size: 3rem;
   font-weight: bold;
 }
 
 header div {
-  padding: 10rem;
+  width: 100%;
 }
 
 header h1 {
-  width: max(300px, 200px);
   color: var(--yellow-gold);
 }
 
@@ -59,7 +62,6 @@ p .billions {
 .left__container {
   background-color: var(--primary-dark-blue);
   flex: 1;
-  border-radius: 5px;
 }
 
 .right__container {
