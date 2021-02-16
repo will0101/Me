@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap");
+
+:root {
+  --primary-dark-blue: #1962da;
+  --yellow-gold: #fdc676;
+}
+
+body {
+  font-family: "Merriweather", serif;
+}
+
+.banner {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--yellow-gold);
+  font-size: 1.2rem;
+}
+
+nav {
+  position: absolute;
+}
+
+header {
+  display: flex;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+header div {
+  padding: 10rem;
+}
+
+header h1 {
+  width: max(300px, 200px);
+  color: var(--yellow-gold);
+}
+
+header p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.left__container p {
+  margin-top: 2rem;
+  color: #ffffff;
+  opacity: 80%;
+}
+
+p .millions {
+  text-decoration: line-through;
+  opacity: 0.8;
+}
+
+p .billions {
+  color: #fdc676;
+  margin-left: 0.2rem;
+}
+
+.left__container {
+  background-color: var(--primary-dark-blue);
+  flex: 1;
+  border-radius: 5px;
+}
+
+.right__container {
+  flex: 1;
+}
