@@ -49,17 +49,20 @@ header h1 {
 
 h2 {
   margin-top: 30px;
+  font-weight: 700;
 }
 
 h2 + p {
   text-align: center;
   margin-top: 20px;
+  line-height: 2;
+  padding: 0 1.3rem;
 }
 
 .left__container {
   flex: 1;
   background-color: var(--primary-color);
-  padding-bottom: 22rem;
+  padding-bottom: 15rem;
 }
 
 .left__container p {
@@ -67,9 +70,10 @@ h2 + p {
   color: #ffffff;
   opacity: 80%;
   font-size: 1.2rem;
-  line-height: 1.5;
-  min-width: 23ch;
+  line-height: 1.7;
+  min-width: 15ch;
   padding: 0 1rem;
+  word-wrap: none;
 }
 
 p .millions {
