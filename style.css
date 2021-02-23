@@ -1,19 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap");
 
 :root {
-  --primary-dark-blue: #1962da;
-  --yellow-gold: #fdc676;
+  --primary-color: #0a0a0a;
+  --secondary-color: #fdc676;
+  --font-family: "Merriweather", serif;
 }
 
 body {
-  font-family: "Merriweather", serif;
+  font-family: var(--font-family);
+}
+
+h2 {
+  font-size: 3.5rem;
 }
 
 .banner {
   text-align: center;
   padding: 1.5rem;
-  background-color: var(--yellow-gold);
   font-size: 1.2rem;
+  background-color: var(--secondary-color);
+}
+
+div h2 {
+  text-align: center;
 }
 
 .banner p:first-of-type {
@@ -25,28 +34,35 @@ nav {
 }
 
 header {
-  /* display: flex; */
   font-size: 3rem;
   font-weight: bold;
-}
-
-header div {
-  width: 100%;
+  text-align: center;
 }
 
 header h1 {
-  color: var(--yellow-gold);
+  padding-top: 6rem;
+  color: white;
+  min-width: 10ch;
+  line-height: 1.5;
 }
 
-header p {
-  font-size: 1.2rem;
-  line-height: 1.5;
+h2 {
+  margin-top: 30px;
+}
+
+h2 + p {
+  text-align: center;
+  margin-top: 20px;
 }
 
 .left__container p {
   margin-top: 2rem;
   color: #ffffff;
   opacity: 80%;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  max-width: 60ch;
+  min-width: 23ch;
 }
 
 p .millions {
@@ -54,16 +70,49 @@ p .millions {
   opacity: 0.8;
 }
 
-p .billions {
-  color: #fdc676;
+.yellow__text {
+  color: var(--secondary-color);
+}
+
+.billions {
+  color: var(--secondary-color);
   margin-left: 0.2rem;
 }
 
 .left__container {
-  background-color: var(--primary-dark-blue);
   flex: 1;
+  background-color: var(--primary-color);
+  padding-bottom: 22rem;
 }
 
 .right__container {
+  display: none;
+  background-color: var(--secondary-color);
   flex: 1;
+}
+
+/* .yellow__line_one {
+  width: 20px;
+  height: 50%;
+  position: absolute;
+  margin-top: 2rem;
+  background-color: var(--secondary-color);
+} */
+
+.work__section {
+}
+
+@media only screen and (min-width: 700px) {
+  header div {
+    padding: 8rem;
+  }
+  .right__container {
+    display: block;
+  }
+  .work__section {
+    padding: 0 50px;
+  }
+  .yellow__text {
+    color: white;
+  }
 }
