@@ -41,6 +41,7 @@ header h1 {
   padding-top: 6rem;
   color: white;
   line-height: 1.5;
+  font-size: calc(5vw + 5vh + 2vmin);
 }
 
 h2 {
@@ -68,6 +69,7 @@ h2 + p {
   font-size: 1.35rem;
   line-height: 1.7;
   padding: 0 1rem;
+  font-size: calc(0vw + 1vh + 3vmin);
 }
 
 p .millions {
@@ -91,14 +93,6 @@ yellow__text_perm {
   flex: 1;
 }
 
-/* .yellow__line_one {
-  width: 20px;
-  height: 50%;
-  position: absolute;
-  margin-top: 2rem;
-  background-color: var(--secondary-color);
-} */
-
 .work__section h2 {
   font-size: calc(5vw + 9vh + 2vmin);
   letter-spacing: 1rem;
@@ -112,6 +106,13 @@ yellow__text_perm {
   flex: 1;
 }
 
+.work__section__desc {
+  font-size: calc(1vw + 1.2vh + 2vmin);
+  margin: 1.5rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
 span.developer {
   display: inline-block;
   -webkit-transform: skewY(10deg);
@@ -121,10 +122,13 @@ span.developer {
 
 @media only screen and (min-width: 1070px) {
   header div {
-    padding: 9rem;
+    padding: 3rem;
   }
   .right__container {
     display: block;
+  }
+  header h1 {
+    padding-top: 0rem;
   }
   .work__section {
     padding: 0 50px;
@@ -137,5 +141,6 @@ span.developer {
     max-width: 200px;
     font-size: calc(1vw + 5vh + 2vmin);
     font-weight: 520;
+    line-height: 1;
   }
 }
