@@ -11,6 +11,15 @@ body {
   font-family: var(--font-family);
 }
 
+.banner {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 900;
+}
+
 h2 {
   font-size: 3.5rem;
 }
@@ -98,7 +107,18 @@ yellow__text_perm {
 
 .work__container {
   display: flex;
-  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.work__section-work {
+  flex: 0.3;
+  line-height: 2;
+}
+
+.work__section-work strong {
+  font-size: 2rem;
+  min-width: 1ch;
 }
 
 .work__section__desc {
@@ -107,6 +127,7 @@ yellow__text_perm {
   font-weight: 600;
   padding-bottom: 50px;
   margin-top: 1rem;
+  flex: 1;
 }
 
 .blue__text {
@@ -135,6 +156,9 @@ span.developer {
   }
   .work__section {
     padding: 0 calc(0.2vw + 0.2vh + 0.2vmin);
+  }
+  .work__container {
+    flex-direction: row;
   }
   .work__section h2 {
     font-size: calc(5vw + 5vh + 2vmin);
