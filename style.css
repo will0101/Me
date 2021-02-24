@@ -15,39 +15,15 @@ h2 {
   font-size: 3.5rem;
 }
 
-.banner {
-  display: none;
-  text-align: center;
-  padding: 1.5rem;
-  font-size: 1.2rem;
-  background-color: var(--secondary-color);
-}
-
-.banner p:first-of-type {
-  margin-bottom: 1rem;
-}
-
-nav {
-  position: absolute;
-}
-
-.crowned__i {
-  position: relative;
-}
-
-.crowned__i svg {
-  position: absolute;
-  width: 50px;
-  height: 40px;
-  top: 1.5px;
-  right: calc(5vw + 9vh + 2vmin);
-}
-
 header {
   display: flex;
   font-size: 4rem;
   font-weight: bold;
   text-align: center;
+}
+.crown {
+  margin-top: 20%;
+  transform: rotate(-29deg);
 }
 
 header h1 {
@@ -73,6 +49,7 @@ h2 + p {
   flex: 1;
   background-color: var(--primary-color);
   padding-bottom: 15rem;
+  font-size: calc(1vw + 1vh + 2vmin);
 }
 
 .left__container p {
@@ -82,7 +59,7 @@ h2 + p {
   font-size: 1.35rem;
   line-height: 1.7;
   padding: 0 1rem;
-  font-size: calc(0vw + 1vh + 2vmin);
+  font-size: calc(1vw + 1vh + 2vmin);
 }
 
 p .millions {
@@ -107,7 +84,7 @@ yellow__text_perm {
 }
 
 .work__section h2 {
-  font-size: calc(5vw + 9vh + 2vmin);
+  font-size: calc(9vw + 7vh + 0vmin);
   letter-spacing: 1rem;
   text-align: center;
   display: flex;
