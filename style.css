@@ -70,7 +70,7 @@ h2 + p {
   font-size: 1.35rem;
   line-height: 1.7;
   padding: 0 1rem;
-  font-size: calc(0vw + 1vh + 3vmin);
+  font-size: calc(0vw + 1vh + 2vmin);
 }
 
 p .millions {
@@ -114,6 +114,9 @@ yellow__text_perm {
   font-weight: 600;
 }
 
+.blue__text {
+  color: var(--tertiary-color);
+}
 span.developer {
   display: inline-block;
   -webkit-transform: skewY(10deg);
@@ -122,6 +125,9 @@ span.developer {
 }
 
 @media only screen and (min-width: 1070px) {
+  .left__container {
+    flex: 2;
+  }
   header div {
     padding: 3rem;
   }
@@ -130,18 +136,20 @@ span.developer {
   }
   header h1 {
     padding-top: 0rem;
+    font-size: calc(5vw + 2vh + 1vmin);
   }
   .work__section {
-    padding: 0 50px;
+    padding: 0 calc(0.2vw + 0.2vh + 0.2vmin);
   }
   .work__section h2 {
     font-size: calc(5vw + 5vh + 2vmin);
   }
 
   .work__section__desc {
-    max-width: 200px;
-    font-size: calc(1vw + 5vh + 2vmin);
     font-weight: 520;
-    line-height: 1;
+    max-width: 5ch;
+    font-size: calc(1vw + 3vh + 2vmin);
+    line-height: 1.2;
+    margin: 1vw;
   }
 }
