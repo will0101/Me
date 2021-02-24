@@ -22,10 +22,6 @@ h2 {
   background-color: var(--secondary-color);
 }
 
-div h2 {
-  text-align: center;
-}
-
 .banner p:first-of-type {
   margin-bottom: 1rem;
 }
@@ -44,7 +40,6 @@ header {
 header h1 {
   padding-top: 6rem;
   color: white;
-  min-width: 10ch;
   line-height: 1.5;
 }
 
@@ -73,7 +68,6 @@ h2 + p {
   font-size: 1.35rem;
   line-height: 1.7;
   padding: 0 1rem;
-  word-wrap: none;
 }
 
 p .millions {
@@ -105,15 +99,24 @@ yellow__text_perm {
   background-color: var(--secondary-color);
 } */
 
-.work__section {
-}
-
 .work__section h2 {
-  /* font-size: calc(5vw + 9vh + 2vmin); */
+  font-size: calc(5vw + 9vh + 2vmin);
   letter-spacing: 1rem;
   text-align: center;
   display: flex;
   justify-content: center;
+}
+
+.work__container {
+  display: flex;
+  flex: 1;
+}
+
+span.developer {
+  display: inline-block;
+  -webkit-transform: skewY(10deg);
+  -ms-transform: skewY(10deg);
+  transform: skewY(10deg);
 }
 
 @media only screen and (min-width: 1070px) {
@@ -126,8 +129,13 @@ yellow__text_perm {
   .work__section {
     padding: 0 50px;
   }
-
   .work__section h2 {
-    /* font-size: calc(3vw + 9vh + 2vmin); */
+    font-size: calc(5vw + 5vh + 2vmin);
+  }
+
+  .work__section__desc {
+    max-width: 200px;
+    font-size: calc(1vw + 5vh + 2vmin);
+    font-weight: 520;
   }
 }
