@@ -3,6 +3,7 @@
 :root {
   --primary-color: #0a0a0a;
   --secondary-color: #fdc676;
+  --tertiary-color: #67c1e3;
   --font-family: "Merriweather", serif;
 }
 
@@ -15,14 +16,11 @@ h2 {
 }
 
 .banner {
+  display: none;
   text-align: center;
   padding: 1.5rem;
   font-size: 1.2rem;
   background-color: var(--secondary-color);
-}
-
-div h2 {
-  text-align: center;
 }
 
 .banner p:first-of-type {
@@ -35,7 +33,7 @@ nav {
 
 header {
   display: flex;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
   text-align: center;
 }
@@ -43,8 +41,8 @@ header {
 header h1 {
   padding-top: 6rem;
   color: white;
-  min-width: 10ch;
   line-height: 1.5;
+  font-size: calc(9vw + 3vh + 2vmin);
 }
 
 h2 {
@@ -69,11 +67,10 @@ h2 + p {
   margin-top: 2rem;
   color: #ffffff;
   opacity: 80%;
-  font-size: 1.2rem;
+  font-size: 1.35rem;
   line-height: 1.7;
-  min-width: 15ch;
   padding: 0 1rem;
-  word-wrap: none;
+  font-size: calc(0vw + 1vh + 3vmin);
 }
 
 p .millions {
@@ -97,29 +94,54 @@ yellow__text_perm {
   flex: 1;
 }
 
-/* .yellow__line_one {
-  width: 20px;
-  height: 50%;
-  position: absolute;
-  margin-top: 2rem;
-  background-color: var(--secondary-color);
-} */
+.work__section h2 {
+  font-size: calc(5vw + 9vh + 2vmin);
+  letter-spacing: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
 
-.work__section {
-  background-color: var(--secondary-color);
+.work__container {
+  display: flex;
+  flex: 1;
+}
+
+.work__section__desc {
+  font-size: calc(1vw + 1.2vh + 2vmin);
+  margin: 1.5rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+span.developer {
+  display: inline-block;
+  -webkit-transform: skewY(10deg);
+  -ms-transform: skewY(10deg);
+  transform: skewY(10deg);
 }
 
 @media only screen and (min-width: 1070px) {
   header div {
-    padding: 8rem;
+    padding: 3rem;
   }
   .right__container {
     display: block;
   }
+  header h1 {
+    padding-top: 0rem;
+  }
   .work__section {
     padding: 0 50px;
   }
-  .yellow__text {
-    color: white;
+  .work__section h2 {
+    font-size: calc(5vw + 5vh + 2vmin);
+  }
+
+  .work__section__desc {
+    max-width: 200px;
+    font-size: calc(1vw + 5vh + 2vmin);
+    font-weight: 520;
+    line-height: 1;
   }
 }
