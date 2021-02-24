@@ -109,7 +109,7 @@ yellow__text_perm {
 }
 
 .work__section h2 {
-  font-size: calc(5vw + 9vh + 2vmin);
+  /* font-size: calc(5vw + 9vh + 2vmin); */
   letter-spacing: 1rem;
   text-align: center;
   display: flex;
