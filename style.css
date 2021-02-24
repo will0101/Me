@@ -22,7 +22,7 @@ header {
   text-align: center;
 }
 .crown {
-  margin-top: 20%;
+  margin-top: 10%;
   transform: rotate(-29deg);
 }
 
@@ -83,6 +83,11 @@ yellow__text_perm {
   flex: 1;
 }
 
+.work__section {
+  padding: 1.5rem;
+  background-color: #fdc77631;
+}
+
 .work__section h2 {
   font-size: calc(9vw + 7vh + 0vmin);
   letter-spacing: 1rem;
@@ -98,9 +103,9 @@ yellow__text_perm {
 
 .work__section__desc {
   font-size: calc(1vw + 1.2vh + 2vmin);
-  margin: 1.5rem;
   line-height: 1.4;
   font-weight: 600;
+  padding-bottom: 50px;
 }
 
 .blue__text {
