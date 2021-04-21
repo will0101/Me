@@ -76,6 +76,10 @@ p .millions {
   opacity: 0.8;
 }
 
+p.printer {
+  font-size: 1rem;
+}
+
 .yellow__text,
 yellow__text_perm {
   color: var(--secondary-color);
