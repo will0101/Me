@@ -1,0 +1,82 @@
+<section class="now">
+  <h2>Now</h2>
+
+  <ul class="now__wrapper">
+    <li>Working with <a href="https://www.ideas42ventures.com/" target="_blank" class="red__text">ideas42 ventures.</a>
+    </li> 
+    <li>Becoming acquainted with the <a class="red__text" target="_blank" href="https://guides.rubyonrails.org/index.html">Rails</a> ecosystem.</li>
+    <li>Learning about the world of <a target="_blank" href="https://en.wikipedia.org/wiki/Mycology" class="green__text">mycology.</a></li>
+    <li>Learning about use cases of <a class="green__text" href="https://en.wikipedia.org/wiki/Hemp" target="_blank">hemp.</a></li>
+    <li>Finding my place in this <span class="blue__text">beautiful world each day.</span> </li>
+    <li>Curious about anything, just <a class="blue__text" href="https://calendly.com/wmb-iii/chat-with-the-kool-kat" target="_blank">pull up on me.</a>
+    </li>
+
+
+    <span class="blue__text ass">NEVER <a class="blue__text" href="https://www.urbandictionary.com/define.php?term=Assume" target="_blank">assume!</a>
+    </span>
+  </ul>
+
+</section>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+section {
+  font-family: 'Passion One', cursive;
+  height: fit-content;
+}
+
+section h2 {
+  font-weight: bold;
+  font-family: 'Alfa Slab One', cursive;
+  margin-bottom: 5%;
+}
+
+ .now__wrapper {
+    border: 5px dashed black;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 1.5em;
+    margin-bottom: 300px;
+    line-height: calc(var(--font-s) / 0.80);
+    padding: 16px;
+    margin:0  50px;
+    margin-bottom: 200px;
+  }
+
+  .now__wrapper li {
+    font-size: calc(var(--font-s) / 1.6);
+  }
+
+  .now__wrapper li:nth-of-type(1)::before {
+    content: "🛠 ";
+  }
+
+  .now__wrapper li:nth-of-type(2)::before {
+    content: "🚄 ";
+  }
+
+  .now__wrapper li:nth-of-type(3)::before {
+    content: "🍄 ";
+  }
+
+  .now__wrapper li:nth-of-type(4)::before {
+    content: "🌱 ";
+  }
+
+  .now__wrapper li:nth-of-type(5)::before {
+    content: "🌍 ";
+  }
+  ul li:nth-of-type(6)::before {
+    content: "> ";
+  }
+
+.ass {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: calc(var(--font-s) * 0.5);
+}
+
+</style>
