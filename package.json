@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@astrojs/netlify": "^1.2.0",
+    "@astrojs/sitemap": "^1.0.0",
     "astro": "^1.4.2",
     "reset-css": "^5.0.1"
   },
