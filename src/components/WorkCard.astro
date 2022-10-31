@@ -53,7 +53,7 @@ const { company, description } = Astro.props as Props
     width: 90vw;
     margin: auto;
     margin-bottom: 200px;
-    animation: floating 3s linear infinite;
+    animation: updown 4s ease infinite;
   }
 
   a p {
@@ -63,5 +63,19 @@ const { company, description } = Astro.props as Props
     padding: 2vw;
     background-color: white;
   }
+
+  @keyframes updown {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
 
 </style>
