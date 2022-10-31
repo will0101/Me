@@ -1,17 +1,21 @@
 ---
+import { Icon } from 'astro-icon';
+
 export interface Props {
   company: string; 
   description: string;
 } 
 
 const { company, description } = Astro.props as Props
-const { default: innerHTML } = await import(`../stuff/${company}.svg?raw`)
 ---
 
 <a href={`/work/${company}`}>
   <div>
-    <Fragment set:html={innerHTML} />
+    <div class="icon__wrapper">
+      <Icon name={company}/>
+    </div>
     <p>{description}</p>
+    <p>Please click me</p>
   </div>
 </a>
 
@@ -19,18 +23,45 @@ const { default: innerHTML } = await import(`../stuff/${company}.svg?raw`)
 <style>
   a {
     text-decoration: none;
-    color: black;
+  }
+
+  a[href^="/work/zendesk"] .icon__wrapper {
+    background-color: rgb(3, 54, 61);
+  } 
+
+  a[href^="/work/zendesk"] > div {
+  box-shadow: 20px 30px 20px 10px rgb(3, 54, 61, 0.6);
+ }
+
+ [astro-icon='zendesk'] {
+    fill: white;
+  }
+
+  a[href^="/work/ideas42"] .icon__wrapper {
+    background-color: rgba(230, 0, 83, 0.8);
+  } 
+
+  a[href^="/work/ideas42"] > div {
+  box-shadow: 20px 30px 20px 10px rgba(230, 0, 83, 0.4);
+ }
+
+  .icon__wrapper {
+    padding: 10vh;
   }
 
   a > div {
-    padding: 1.2vh;
+    width: 90vw;
     margin: auto;
-    margin-bottom: 10vw;
+    margin-bottom: 200px;
+    animation: floating 3s linear infinite;
   }
 
   a p {
-    margin-top: 5vw;
     font-size: calc(1rem + 1.2vh);
-    line-height: 2;
+    line-height: 1.8;
+    color: black;
+    padding: 2vw;
+    background-color: white;
   }
+
 </style>
