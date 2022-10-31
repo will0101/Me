@@ -48,8 +48,15 @@ const { title } = Astro.props;
 	section {
 		text-align: center;
 	}
-	h2 {
+	
+	h1 {
 		font-size: var(--font-xl);
+		margin-top: 10%;
+    font-weight: bold;
+	}
+
+	h2 {
+		font-size: calc(var(--font-xl) + 2.5rem);
 		margin-top: 10%;
     font-weight: bold;
 	}
@@ -92,9 +99,16 @@ const { title } = Astro.props;
 		margin-bottom: 20px;
 	}
 
-	.work p {
+	.work p:first-child {
 		font-size: calc(0.8rem + 2vw);
+		max-width: 5ch;
 	}
+
+	.work > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
 	.now__wrapper {
 		line-height: 2.9ch;
