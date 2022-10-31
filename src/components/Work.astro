@@ -1,3 +1,8 @@
+---
+import WorkCard from "./WorkCard.astro";
+import companies from '../stuff/companies.json'
+---
+
 <section class="work">
   <h2>
     w
@@ -8,10 +13,18 @@
     <span class="blue__text">
     K
     </span>
-    </h2>
+  </h2>
+  <div>
+
 <p>A <span class="blue__text">collection</span> of things I've done in my life as a 
   <span class="developer blue__text">developer</span>
 </p>
+
+<section class="card__section">
+  {companies.map(comany => <WorkCard {...comany}/>)}
+</section>
+</div>
+
 
 </section>
 
@@ -23,20 +36,32 @@
     background: var(--secondary-yellow);
   }
 
+  .work > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+	}
+
   section h2 {
     font-family: 'Lakki Reddy', cursive;
   }
 
-  section p {
+  .work p {
     font-weight: 700;
-    max-width: 5ch;
     line-height: 1.2;
     text-align: left;
     font-family: 'Lakki Reddy', cursive;
     margin-bottom: 100px;
     padding-left: 2%;
     opacity: 0.86;
-    font-size: calc(var(--font-l) + 3vw);
+    font-size: calc(var(--font-l) + 2vw);
+    text-align: center;
+  }
+
+  .card__section {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
   }
   
   .developer {
