@@ -1,0 +1,36 @@
+---
+export interface Props {
+  company: string; 
+  description: string;
+} 
+
+const { company, description } = Astro.props as Props
+const { default: innerHTML } = await import(`../stuff/${company}.svg?raw`)
+---
+
+<a href={`/work/${company}`}>
+  <div>
+    <Fragment set:html={innerHTML} />
+    <p>{description}</p>
+  </div>
+</a>
+
+
+<style>
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  a > div {
+    padding: 1.2vh;
+    margin: auto;
+    margin-bottom: 10vw;
+  }
+
+  a p {
+    margin-top: 5vw;
+    font-size: calc(1rem + 1.2vh);
+    line-height: 2;
+  }
+</style>
