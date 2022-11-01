@@ -115,6 +115,33 @@ const { title } = Astro.props;
     justify-content: space-between;
   }
 
+	.card__section {
+		flex-direction: row;
+	}
+
+	.icon__wrapper {
+		padding: 5vh;
+	}
+
+	.card__section a > div {
+		width: fit-content;
+		margin-bottom: 0px;
+	}
+
+	.card__section a p {
+		font-size: 1rem;
+		padding: 0.5vw;
+	}
+
+	.card__section a:nth-child(even) {
+		margin-top: 200px;
+	}
+
+	.hidden__desktop {
+		display: none;
+	}
+
+
 	.now__wrapper {
 		line-height: 2.9ch;
 		margin-bottom: 0;
