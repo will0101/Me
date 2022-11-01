@@ -30,7 +30,7 @@ const { title } = Astro.props;
 	--support-red: rgb(230, 0, 83);
 	--tertiary-green: #31B96E;
 	font-family: "Merriweather", serif;;
-	--font-xl: calc(152 / 16 * 1.7vw);
+	--font-xl: calc(152 / 16 * 1.8vw);
 	--font-l: calc(152 / 16 * 0.5vw);
 	--font-m: calc(152 / 16 * 0.3em);
 	--font-s: calc(152 / 16 * 0.4em);
@@ -51,12 +51,12 @@ const { title } = Astro.props;
 	
 	h1 {
 		font-size: var(--font-xl);
-		margin-top: 10%;
+		margin-top: 5%;
     font-weight: bold;
 	}
 
 	h2 {
-		font-size: calc(var(--font-xl) + 2.5rem);
+		font-size: calc(var(--font-l) + 2.5rem);
 		margin-top: 10%;
     font-weight: bold;
 	}
@@ -84,13 +84,18 @@ const { title } = Astro.props;
 		grid-auto-rows: minmax(10%, 50vmax);
 	}
 
+	h1 {
+		font-size: calc(var(--font-xl) / 2);
+
+	}
+
 	h2 {
 		font-size: calc(var(--font-l) * 1.5);
 		margin-top: 5%;
 	}
 
 	.i_am_a {
-		font-size: calc(var(--font-m) * 3vh);
+    font-size: calc(0.5rem + 1vw);
 		margin-bottom: calc(var(--font-l) / 2);
 	}
 
@@ -107,7 +112,7 @@ const { title } = Astro.props;
 	.work > div {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
 	.now__wrapper {
