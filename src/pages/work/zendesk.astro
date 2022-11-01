@@ -1,10 +1,73 @@
 --- 
 import Icon from "astro-icon";
+import ProjectCard from "../../components/ProjectCard.astro";
+import WorkItemLayout from "../../layouts/WorkItemLayout.astro";
 
-
+import projects from '../../data/zendesk/projects.json'
 --- 
+<WorkItemLayout title="William - Zendesk career stint page">
+
 <section>
   <Icon name="zendesk"/>
-  <p>If you found this you are early lol</p>
+  <p>Here are all the things I did at Zendesk over the course of a year!</p>
+
+  {projects.map(project => <ProjectCard {...project}/>)}
 </section>
+</WorkItemLayout>
+
+<style>
+  @font-face {
+    font-family: 'sharp-sans', 'Merriweather';
+    src: url('/fonts/zendesk/Sharp-Sans.otf');
+  }
+  :root {
+  --font-xl: calc(100 / 16 * 1vw);
+	--font-l: calc(152 / 16 * 0.5vw);
+	--font-m: calc(152 / 16 * 0.3em);
+	--font-s: calc(152 / 16 * 0.4em);
+  }
+  
+  body {
+  background-color: var(--zen-green);
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-family: 'sharp-sans';
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: var(--font-l);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section p {
+  margin-bottom: 50px;
+  font-size: var(--font-xl);
+}
+  svg {
+    fill: #00a656;
+    margin-bottom: 50px;
+    max-width: 50vw;
+    border-radius: 2px;
+  }
+
+  figure img {
+    max-width: 85vw;
+  }
+
+  figure {
+    display: flex;
+    flex-flow: column;
+  }
+
+  
+</style>
 

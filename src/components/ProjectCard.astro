@@ -1,0 +1,22 @@
+---
+
+export interface ProjectCardProps {
+  media: string
+  alt: string
+  caption: string 
+  description: string
+  className: string
+  projectName: string
+}
+
+const {projectName, media, description, alt, caption, className } = Astro.props as ProjectCardProps
+---
+
+<div class={className}>
+  <h2>{projectName}</h2>
+  <figure>
+    <img src={media} alt={alt}>
+    <figcaption>{caption}</figcaption>
+  </figure>
+  <p>{description}</p>
+</div>
