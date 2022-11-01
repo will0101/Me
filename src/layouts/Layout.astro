@@ -117,6 +117,8 @@ const { title } = Astro.props;
 
 	.card__section {
 		flex-direction: row;
+		gap: 10px;
+		margin-right: 10px;
 	}
 
 	.icon__wrapper {
@@ -124,8 +126,12 @@ const { title } = Astro.props;
 	}
 
 	.card__section a > div {
-		width: fit-content;
+    width: 200px;
 		margin-bottom: 0px;
+	}
+
+	.card__section a:first-child {
+		width: 10vw;
 	}
 
 	.card__section a p {
@@ -154,7 +160,7 @@ const { title } = Astro.props;
   }
 
 	.ass {
-		margin-top: 10px;
+	margin-top: 10px;
   font-size: calc(var(--font-s) * 0.3);
 }
 
