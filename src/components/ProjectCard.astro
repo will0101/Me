@@ -21,11 +21,16 @@ const {projectName, media, description, alt, caption, className, lessons} = Astr
     <img src={`/src/data/${media}`} alt={alt}>
     <figcaption>{caption}</figcaption>
   </figure>
+
+  <div>
+
   <p set:html={description}></p>
   <ul>
     <p>Takeaways</p>
     {lessons && lessons.map(item => <li>{item}</li>)}
     </ul>
+  </div>
+
 </div>
 
 </div>
@@ -34,26 +39,6 @@ const {projectName, media, description, alt, caption, className, lessons} = Astr
 
   .content__wrapper {
     margin-bottom: 150px;
-  }
-
-  div ul {
-    margin-top: 20px;
-    text-align: left;
-  }
-
-  div ul p {
-    text-align: center;
-    text-decoration: underline;
-  }
-
-  div ul li {
-    line-height: 1.3;
-    font-size: calc(var(--font-m) + 0.5vw);
-  }
-
-  div ul li::before {
-    content: '-';
-    padding-inline-end: 5px;
   }
 
   div h2 {
@@ -72,7 +57,7 @@ const {projectName, media, description, alt, caption, className, lessons} = Astr
 
   div figure {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     position: relative;
     margin-bottom: 20px;
     flex: 0.5;
@@ -92,5 +77,54 @@ const {projectName, media, description, alt, caption, className, lessons} = Astr
     padding: 5px;
     text-align: left;
   }
+
+  div ul {
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  div ul p {
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  div ul li {
+    line-height: 1.5;
+    font-size: calc(var(--font-m) + 0.5vw);
+  }
+
+  div ul li::before {
+    content: '-';
+    padding-inline-end: 5px;
+  }
+  
+  @media only screen and (min-width: 1000px) {
+
+.content__wrapper {
+  display: flex;
+}
+
+.content__wrapper:nth-child(odd) {
+flex-direction: row-reverse;
+}
+
+.content__wrapper img {
+  max-width: 55vw;
+  margin-right: 20px;
+}
+
+
+.content__wrapper p {
+  font-size: 30px;
+  opacity: 0.8;
+  margin-top: 500px;
+}
+
+.content__wrapper ul li {
+  font-size: 22px;
+
+}
+
+}
   
 </style>
