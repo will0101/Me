@@ -7,16 +7,90 @@ export interface ProjectCardProps {
   description: string
   className: string
   projectName: string
+  lessons: string[]
 }
 
-const {projectName, media, description, alt, caption, className } = Astro.props as ProjectCardProps
+const {projectName, media, description, alt, caption, className, lessons} = Astro.props as ProjectCardProps
 ---
 
 <div class={className}>
   <h2>{projectName}</h2>
+
+<div class="content__wrapper">
   <figure>
-    <img src={media} alt={alt}>
+    <img src={`/src/data/${media}`} alt={alt}>
     <figcaption>{caption}</figcaption>
   </figure>
-  <p>{description}</p>
+  <p set:html={description}></p>
+  <ul>
+    <p>Takeaways</p>
+    {lessons && lessons.map(item => <li>{item}</li>)}
+    </ul>
 </div>
+
+</div>
+
+<style>
+
+  .content__wrapper {
+    margin-bottom: 150px;
+  }
+
+  div ul {
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  div ul p {
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  div ul li {
+    line-height: 1.3;
+    font-size: calc(var(--font-m) + 0.5vw);
+  }
+
+  div ul li::before {
+    content: '-';
+    padding-inline-end: 5px;
+  }
+
+  div h2 {
+  margin-bottom: 20px;
+  font-size: calc(var(--font-l) + 1.5vw);
+  margin: 0 auto;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 20px;
+  opacity: 0.8;
+}
+
+    div figure img {
+    max-width: 95vw;
+  }
+
+  div figure {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    margin-bottom: 20px;
+    flex: 0.5;
+  }
+
+  figure figcaption {
+    background-color: rgba(0, 0, 0, 0.9);
+    width: inherit;
+    height: 30px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  div p {
+    font-size: calc(var(--font-s) + 0.1vw);
+    line-height: 1.5;
+    padding: 5px;
+    text-align: left;
+  }
+  
+</style>
