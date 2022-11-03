@@ -13,20 +13,33 @@ const zenologies = techStack.filter(tech => tech.companies.includes('zendesk'))
 <WorkItemLayout title="William - Zendesk career stint page">
 
 <section>
-<div class="company__box">
-  <Icon name="zendesk"/>
-    <p>The Zortfolio.</p>
+<heading class="company__box">
+  <div>
+    <Icon name="zendesk"/>
+    <div class="explanation">
+      <p>The Zortfolio.</p>
+      <p>The tools and tech I used while there.</p>
+    </div>
   </div>
+</heading>
 
 
-  <p>The tech stack I used while there:</p>
-  <ul class="technology__list">
-    {zenologies.map(t => <li><a target="_blank" href={t.website}>{t.name}</a></li>)}
-  </ul>
+<div class="technology__list">
 
+  <h2>
+    Tech Stack
+  </h2>
+    <ul>
+      {zenologies.map(t => <li><a target="_blank" href={t.website}>{t.name}</a></li>)}
+    </ul>
+</div>
 <div>
 </div>
-  {projects.map(project => <ProjectCard {...project}/>)}
+
+<div>
+  <h2>Projects</h2>
+  <!-- {projects.map(project => <ProjectCard {...project}/>)} -->
+</div>
 </section>
 </WorkItemLayout>
 
@@ -35,12 +48,6 @@ const zenologies = techStack.filter(tech => tech.companies.includes('zendesk'))
     font-family: 'sharp-sans', 'Merriweather';
     src: url('/fonts/zendesk/Sharp-Sans.otf');
   }
-  :root {
-  --font-xl: calc(100 / 16 * 1vw);
-	--font-l: calc(152 / 16 * 0.5vw);
-	--font-m: calc(50 / 16 * 1.5vw);
-	--font-s: calc(70 / 20 * 0.4em);
-  }
   
   body {
   background-color: var(--zen-green);
@@ -48,7 +55,7 @@ const zenologies = techStack.filter(tech => tech.companies.includes('zendesk'))
 }
 
 .company__box svg {
-  fill: #00a656;
+  fill: var(--primary);
 }
 
 </style>
