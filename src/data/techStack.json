@@ -9,5 +9,8 @@
   {"name" : "Jest", "website": "https://jestjs.io/", "companies": ["zendesk", "studio"]},
   {"name": "React Testing Library", "website": "https://testing-library.com", "companies": ["studio", "studio"]},
   {"name": "Zendesk Garden", "website": "https://garden.zendesk.com/", "companies": ["zendesk"]},
-  {"name": "Datadog", "website": "https://www.datadoghq.com/", "companies": ["zendesk"]}
+  {"name": "Datadog", "website": "https://www.datadoghq.com/", "companies": ["zendesk"]},
+  {"name": "Redux", "website": "https://redux.js.org/", "companies": ["zendesk"]},
+  {"name": "XState", "website": "https://xstate.js.org/docs/", "companies": ["studio"]},
+  {"name": "TypeScript", "website": "https://www.typescriptlang.org/", "companies": ["studio", "zendesk"]}
 ]
