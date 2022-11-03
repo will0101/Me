@@ -14,7 +14,7 @@ const {projectName, media, description, alt, caption, className, lessons} = Astr
 ---
 
 <div class={className}>
-  <h2>{projectName}</h2>
+  <h2 class="card__title">{projectName}</h2>
 
 <div class="content__wrapper">
   <figure>
@@ -37,68 +37,69 @@ const {projectName, media, description, alt, caption, className, lessons} = Astr
 
 <style>
 
-  .content__wrapper {
-    margin-bottom: 150px;
-  }
 
-  div h2 {
-  margin-bottom: 20px;
-  font-size: calc(var(--font-l) + 1.5vw);
-  margin: 0 auto;
-  font-weight: bold;
-  text-align: center;
-  padding-bottom: 20px;
-  opacity: 0.8;
+h2.card__title {
+  /* margin-bottom: 20px; */
+  /* font-size: calc(var(--font-l) + 1.5vw); */
+  /* margin: 0 auto; */
+  /* text-align: center; */
+  /* padding-bottom: 5rem; */
+  /* opacity: 0.8; */
 }
 
+  .content__wrapper {
+    /* margin-bottom: 150px; */
+  }
+
     div figure img {
-    max-width: 95vw;
+    /* max-width: 95vw; */
+    /* border-radius: 3px; */
   }
 
   div figure {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    margin-bottom: 20px;
-    flex: 0.5;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* position: relative; */
+    /* margin-bottom: 20px; */
+    /* flex: 0.5; */
   }
 
   figure figcaption {
-    background-color: rgba(0, 0, 0, 0.9);
-    width: inherit;
-    height: 30px;
-    padding: 10px;
-    text-align: center;
+    /* background-color: rgba(0, 0, 0, 0.9); */
+    /* width: inherit; */
+    /* height: 30px; */
+    /* padding: 10px; */
+    /* text-align: center; */
   }
 
   div p {
-    font-size: calc(var(--font-s) + 0.1vw);
-    line-height: 1.5;
-    padding: 5px;
-    text-align: left;
+    /* font-size: calc(var(--font-s) + 0.1vw); */
+    /* line-height: 1.5; */
+    /* padding: 5px; */
+    /* text-align: left; */
   }
 
   div ul {
-    margin-top: 20px;
-    text-align: left;
+    /* margin-top: 20px; */
+    /* text-align: left; */
   }
 
   div ul p {
-    text-align: center;
-    text-decoration: underline;
+    /* text-align: center; */
+    /* text-decoration: underline; */
   }
 
   div ul li {
-    line-height: 1.5;
-    font-size: calc(var(--font-m) + 0.5vw);
+    /* line-height: 1.5; */
+    /* font-size: calc(var(--font-m) + 0.5vw); */
   }
 
   div ul li::before {
-    content: '-';
-    padding-inline-end: 5px;
+    /* content: '-'; */
+    /* padding-inline-end: 5px; */
   }
   
-  @media only screen and (min-width: 1000px) {
+  /* @media only screen and (min-width: 1000px) {
 
 .content__wrapper {
   display: flex;
@@ -114,17 +115,16 @@ flex-direction: row-reverse;
 }
 
 
-.content__wrapper p {
-  font-size: 30px;
+.content__wrapper p:first-of-type {
+  font-size: calc(2rem + 0.5vw);
   opacity: 0.8;
-  margin-top: 500px;
+  margin-top: 30%;
 }
 
 .content__wrapper ul li {
   font-size: 22px;
-
 }
 
-}
+} */
   
 </style>

@@ -15,7 +15,7 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="William Bogans is a Remote Software Engineer. Who are you?"/>
+		<meta name="description" content="William Bogans is a human first, remote software engineer. Who are you?"/>
 	</head>
 	<body>
 		<slot />
@@ -25,16 +25,46 @@ const { title } = Astro.props;
 	@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap");
 	
 	:root {
-  --primary-dark: #0a0a0a;
-  --secondary-yellow: #fdc676;
-  --support-blue: #0095ff;
-	--support-red: rgb(230, 0, 83);
-	--tertiary-green: #31B96E;
-	--zen-green: rgb(3, 54, 61);
 	font-family: "Merriweather", serif;;
+	--zen-green: rgb(3, 54, 61);
 	--font-xl: calc(152 / 16 * 1.8vw);
 	--font-l: calc(152 / 16 * 0.5vw);
 	--font-m: calc(152 / 16 * 0.3em);
 	--font-s: calc(152 / 16 * 0.4em);
 }
+
+p,a, h2, li {
+	color: white;
+}
+
+body {
+	margin: 0;
+  font-family: 'sharp-sans';
+}
+
+svg {
+		/* width: 50vw; */
+  }
+
+	section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section ul.technology__list {
+	/* column-count: 2;
+	padding: 20px;
+	line-height: 1.5;
+	border-radius: 3px;
+	width: 80vw;
+	margin: 0 auto;
+	font-size: 1.3rem; */
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+}
+
 </style>

@@ -4,12 +4,28 @@ import ProjectCard from "../../components/ProjectCard.astro";
 import WorkItemLayout from "../../layouts/WorkItemLayout.astro";
 
 import projects from '../../data/zendesk/projects.json'
+import techStack from '../../data/techStack.json'
+
+const zenologies = techStack.filter(tech => tech.companies.includes('zendesk'))
+.sort((a,b) => a.name.localeCompare(b.name))
+
 --- 
 <WorkItemLayout title="William - Zendesk career stint page">
 
 <section>
+<div class="company__box">
   <Icon name="zendesk"/>
-  <p>Projects I worked on while at Zendesk</p>
+    <p>The Zortfolio.</p>
+  </div>
+
+
+  <p>The tech stack I used while there:</p>
+  <ul class="technology__list">
+    {zenologies.map(t => <li><a target="_blank" href={t.website}>{t.name}</a></li>)}
+  </ul>
+
+<div>
+</div>
   {projects.map(project => <ProjectCard {...project}/>)}
 </section>
 </WorkItemLayout>
@@ -28,30 +44,12 @@ import projects from '../../data/zendesk/projects.json'
   
   body {
   background-color: var(--zen-green);
-  margin: 0;
-  color: white;
-  font-family: 'sharp-sans';
-  padding: 20px;
-  text-align: center;
+ 
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.company__box svg {
+  fill: #00a656;
 }
-
-section p {
-  margin-bottom: 50px;
-  font-size: var(--font-xl);
-}
-
-  svg {
-    fill: #ed8f1c;
-    margin-bottom: 40px;
-    max-width: 50vw;
-  }
 
 </style>
 
