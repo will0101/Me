@@ -1,0 +1,13 @@
+[
+  {"name": "React.js", "website": "https://reactjs.org/", "companies": ["zendesk", "studio"]}, 
+  {"name":"Ruby on Rails", "website": "https://rubyonrails.org/", "companies": ["zendesk", "studio"]}, 
+  {"name": "Node.js", "website": "https://nodejs.org/en/", "companies": ["zendesk"]}, 
+  {"name": "Ember.js", "website": "https://emberjs.com/", "companies": ["zendesk"]}, 
+  {"name": "Styled Components", "website": "https://styled-components.com/", "companies": ["zendesk"]}, 
+  {"name" :"Cypress", "website": "https://www.cypress.io/", "companies": ["zendesk", "studio"]},
+  {"name" : "Yeoman Generator", "website": "https://yeoman.io/", "companies": ["zendesk"]},
+  {"name" : "Jest", "website": "https://jestjs.io/", "companies": ["zendesk", "studio"]},
+  {"name": "React Testing Library", "website": "https://testing-library.com", "companies": ["studio", "studio"]},
+  {"name": "Zendesk Garden", "website": "https://garden.zendesk.com/", "companies": ["zendesk"]},
+  {"name": "Datadog", "website": "https://www.datadoghq.com/", "companies": ["zendesk"]}
+]
