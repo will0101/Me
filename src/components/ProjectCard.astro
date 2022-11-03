@@ -37,66 +37,59 @@ const {projectName, media, description, alt, caption, className, lessons} = Astr
 
 <style>
 
-
-h2.card__title {
-  /* margin-bottom: 20px; */
-  /* font-size: calc(var(--font-l) + 1.5vw); */
-  /* margin: 0 auto; */
-  /* text-align: center; */
-  /* padding-bottom: 5rem; */
-  /* opacity: 0.8; */
-}
-
-  .content__wrapper {
-    /* margin-bottom: 150px; */
+  div:not(:last-of-type) {
+    margin-bottom: 150px;
   }
 
-    div figure img {
-    /* max-width: 95vw; */
-    /* border-radius: 3px; */
+
+h2.card__title {
+  font-size: calc(1.5rem + 1vw);
+  margin: 0 auto;
+  margin: 25px 0;
+}
+
+  div figure img {
+    max-width: 95vw;
+    border-radius: 2px;
+    object-fit: cover;
   }
 
   div figure {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* position: relative; */
-    /* margin-bottom: 20px; */
-    /* flex: 0.5; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 20px;
   }
 
   figure figcaption {
-    /* background-color: rgba(0, 0, 0, 0.9); */
-    /* width: inherit; */
-    /* height: 30px; */
-    /* padding: 10px; */
-    /* text-align: center; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    text-align: center;
+    color:white;
   }
 
   div p {
-    /* font-size: calc(var(--font-s) + 0.1vw); */
-    /* line-height: 1.5; */
-    /* padding: 5px; */
-    /* text-align: left; */
+    font-size: calc(1rem + 2vw);
+    line-height: 1.5;
   }
 
   div ul {
-    /* margin-top: 20px; */
-    /* text-align: left; */
-  }
-
-  div ul p {
-    /* text-align: center; */
-    /* text-decoration: underline; */
+    margin-top: 20px;
+    text-align: left;
   }
 
   div ul li {
-    /* line-height: 1.5; */
-    /* font-size: calc(var(--font-m) + 0.5vw); */
+    line-height: 1.5;
+    font-size: calc(1rem + 2vw);
   }
 
   div ul li::before {
-    /* content: '-'; */
-    /* padding-inline-end: 5px; */
+    content: '-';
+    padding-inline-end: 5px;
   }
   
   /* @media only screen and (min-width: 1000px) {
