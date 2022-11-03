@@ -49,16 +49,17 @@ h2.card__title {
 }
 
   div figure img {
-    max-width: 95vw;
+    width: 90vw;
     border-radius: 2px;
     object-fit: cover;
+    display: block;
   }
 
   div figure {
-    display: flex;
-    flex-direction: column;
     position: relative;
+    display: flex;
     margin-bottom: 20px;
+    width: min-content;
   }
 
   figure figcaption {
@@ -92,32 +93,24 @@ h2.card__title {
     padding-inline-end: 5px;
   }
   
-  /* @media only screen and (min-width: 1000px) {
+ @media only screen and (min-width: 900px) {
+  div figure img {
+    width: 60vw;
+  }
 
-.content__wrapper {
-  display: flex;
-}
+  div p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
 
-.content__wrapper:nth-child(odd) {
-flex-direction: row-reverse;
-}
+  div p, div ul li {
+    margin-left: 20px;
+  }
 
-.content__wrapper img {
-  max-width: 55vw;
-  margin-right: 20px;
-}
-
-
-.content__wrapper p:first-of-type {
-  font-size: calc(2rem + 0.5vw);
-  opacity: 0.8;
-  margin-top: 30%;
-}
-
-.content__wrapper ul li {
-  font-size: 22px;
-}
-
-} */
+  div ul li {
+    line-height: 1.5;
+    font-size: 1.5rem;
+  }
+} 
   
 </style>

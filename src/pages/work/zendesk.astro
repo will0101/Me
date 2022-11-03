@@ -36,8 +36,11 @@ const zenologies = techStack.filter(tech => tech.companies.includes('zendesk'))
 <div>
 </div>
 
-<div>
+<div class="project__list">
   <h2>Projects</h2>
+  <div class="empty_for_odd">
+    <div class="content__wrapper"></div>
+  </div>
   {projects.map(project => <ProjectCard {...project}/>)}
 </div>
 </section>
