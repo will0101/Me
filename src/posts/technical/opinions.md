@@ -1,6 +1,6 @@
 ---
 title: Opinions
-layout: ../../layouts/post.astro
+layout: ../../layouts/PostLayout.astro
 ---
 # My first post
 This is my first Astro post.
