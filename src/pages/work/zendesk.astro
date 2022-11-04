@@ -1,52 +1,13 @@
 --- 
-import Icon from "astro-icon";
-import ProjectCard from "../../components/ProjectCard.astro";
 import WorkItemLayout from "../../layouts/WorkItemLayout.astro";
-
 import projects from '../../data/zendesk/projects.json'
-import techStack from '../../data/techStack.json'
-
-const zenologies = techStack.filter(tech => tech.companies.includes('zendesk'))
-.sort((a,b) => a.name.localeCompare(b.name))
-
+import ProjectPage from "../../components/ProjectPage.astro";
 --- 
 <WorkItemLayout title="William - Zendesk career stint page">
-
-<section>
-<heading class="company__box">
-  <div>
-    <Icon name="zendesk"/>
-    <div class="explanation">
-      <p>The Zortfolio.</p>
-      <p>The tools and tech I used while there.</p>
-    </div>
-  </div>
-</heading>
-
-
-<div class="technology__list">
-
-  <h2>
-    Tech Stack
-  </h2>
-    <ul>
-      {zenologies.map(t => <li><a target="_blank" href={t.website}>{t.name}</a></li>)}
-    </ul>
-</div>
-<div>
-</div>
-
-<div class="project__list">
-  <h2>Projects</h2>
-  <div class="empty_for_odd">
-    <div class="content__wrapper"></div>
-  </div>
-  {projects.map(project => <ProjectCard {...project}/>)}
-</div>
-</section>
+  <ProjectPage title="Zortfolio" projects={projects} company='zendesk'/>
 </WorkItemLayout>
 
-<style>
+<style is:global>
   @font-face {
     font-family: 'sharp-sans', 'Merriweather';
     src: url('/fonts/zendesk/Sharp-Sans.otf');
@@ -57,9 +18,16 @@ const zenologies = techStack.filter(tech => tech.companies.includes('zendesk'))
  
 }
 
-.company__box svg {
+section .company__box svg {
   fill: var(--zen-primary);
 }
 
+.company__box h1 {
+	color: var(--zen-primary);
+}
+
+.explanation p {
+  color: var(--zen-secondary);
+}
 </style>
 

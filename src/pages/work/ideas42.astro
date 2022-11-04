@@ -1,19 +1,19 @@
 --- 
-import WorkTemplate from "./WorkTemplate.astro";
-import projects from '../../data//ideas42/projects.json'
-import ProjectCard from "../../components/ProjectCard.astro";
+
 import WorkItemLayout from "../../layouts/WorkItemLayout.astro";
 import Icon from "astro-icon";
+import ProjectPage from '../../components/ProjectPage.astro';
+import projects from '../../data/ideas42/projects.json'
 --- 
 
 <WorkItemLayout title={`William - ideas42 career stint page`}>
-  <section>
-  <Icon name='ideas42'/>
-  <p>Projects I worked on while at ideas42 venture studio</p>
-  {projects.map(project => <ProjectCard {...project}/>)}
-</section>
+  <ProjectPage title="Venture sphere" projects={projects} company="ideas42"/>
 </WorkItemLayout>
 
 <style>
+
+  body {
+    background-color: gray;
+  }
 
 </style>

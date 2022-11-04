@@ -1,0 +1,57 @@
+--- 
+import Icon from "astro-icon";
+import ProjectCard from "./ProjectCard.astro";
+import WorkItemLayout from "../layouts/WorkItemLayout.astro";
+
+import techStack from '../data/techStack.json'
+
+export interface ProjectPageProps {
+  company: string; 
+  title: string;
+  projects: [{}]
+} 
+
+const { company, title , projects} = Astro.props as ProjectPageProps
+
+const technologies = techStack.filter(tech => tech.companies.includes(company))
+.sort((a,b) => a.name.localeCompare(b.name))
+
+--- 
+<WorkItemLayout title="William - Zendesk career stint page">
+
+<section>
+<heading class="company__box">
+  <div>
+    <Icon name={company}/>
+    <div class="explanation">
+      <h1>The {title}.</h1>
+      <p>The tools and tech I used while there.</p>
+    </div>
+  </div>
+</heading>
+
+
+<div class="technology__list">
+
+  <h2>
+    Tech Stack
+  </h2>
+    <ul>
+      {technologies.map(technology => <li><a target="_blank" href={technology.website}>{technology.name}</a></li>)}
+    </ul>
+</div>
+<div>
+</div>
+
+<div class="project__list">
+  <h2>Projects</h2>
+  {projects.map(project => <ProjectCard {...project}/>)}
+</div>
+</section>
+</WorkItemLayout>
+
+<style>
+
+
+</style>
+
