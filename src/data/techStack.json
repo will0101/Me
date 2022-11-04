@@ -57,7 +57,7 @@
   {
     "name": "Redux",
     "website": "https://redux.js.org/",
-    "companies": ["zendesk"]
+    "companies": ["zendesk", "ideas42"]
   },
   {
     "name": "XState",
@@ -83,5 +83,10 @@
     "name": "Sentry",
     "website": "https://sentry.io/welcome/",
     "companies": ["ideas42"]
+  }, 
+  {
+    "name": "Storybook",
+    "website": "https://storybook.js.org/",
+    "companies": ["ideas42", "zendesk"]
   }
 ]
