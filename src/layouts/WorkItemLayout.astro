@@ -27,15 +27,20 @@ const { title } = Astro.props;
 	--zen-green: rgb(3, 54, 61);
 	--zen-primary: #228f67;
 	--zen-secondary: #efc93d;
+	--zen-tertiary: #f6c8be;
 	--studio-purple: rgb(71, 0, 214);
 }
 
 p,a, h2, li {
 	color: white;
 }
+
 h2 {
-		margin: 30px 0;
-		font-size: calc(2.3rem + 2vw);
+	font-size: calc(2.3rem + 2vw);
+	margin-top: 50px;
+}
+h2:not(:first-of-type) {
+		margin: 40px 0;
 	}
 
 body {

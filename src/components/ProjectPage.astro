@@ -25,7 +25,7 @@ const technologies = techStack.filter(tech => tech.companies.includes(company))
     <Icon name={company}/>
     <div class="explanation">
       <h1>The {title}.</h1>
-      <p>The tools and tech I used while there.</p>
+      <p>The projects and tech I worked with while I was there.</p>
     </div>
   </div>
 </heading>
@@ -36,7 +36,7 @@ const technologies = techStack.filter(tech => tech.companies.includes(company))
   <h2>
     Tech Stack
   </h2>
-  <p>These are all the technologies I <strong>remember</strong> working with while there</p>
+  <p>These are all the technologies I <strong>remember</strong> working with while there.</p>
     <ul>
       {technologies.map(technology => <li><a target="_blank" href={technology.website}>{technology.name}</a></li>)}
     </ul>
@@ -49,9 +49,16 @@ const technologies = techStack.filter(tech => tech.companies.includes(company))
   {projects.map(project => <ProjectCard {...project}/>)}
 </div>
 </section>
+
 </WorkItemLayout>
 
 <style>
+
+
+	strong {
+		font-weight: bold;
+		text-decoration: underline;
+	}
 
 heading.company__box div {
 	display: flex;
@@ -86,6 +93,12 @@ div.technology__list ul {
 	font-size: 1.3rem;
 	column-gap: 0;
 	margin: 0 auto;
+}
+
+.technology__list p {
+	font-size: calc(1rem + 1.1vw);
+	opacity: 0.7;
+	margin: 20px 0;
 }
 
 div.technology__list li {
