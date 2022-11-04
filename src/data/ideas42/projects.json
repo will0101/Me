@@ -1,46 +1,38 @@
 [
   {
-    "className": "",
-    "projectName": "",
-    "media": "",
-    "alt": "",
-    "caption": "",
-    "description": "",
-    "lessons": []
+    "className": "studio-website",
+  "projectName": "Ideas42 Website",
+  "media": "ideas42/studio_landing.png",
+  "alt": "The ideas42 marking website",
+  "caption": "",
+  "description": "",
+  "lessons": []
   },
   {
-    "className": "",
-    "projectName": "",
-    "media": "",
-    "alt": "",
-    "caption": "",
-    "description": "",
-    "lessons": []
-  },
-  {
-    "className": "",
-    "projectName": "",
-    "media": "",
-    "alt": "",
-    "caption": "",
-    "description": "",
-    "lessons": [""]
-  },
-  {
-    "className": "",
-    "projectName": "",
-    "media": "",
-    "alt": "",
-    "caption": "",
-    "description": "",
-    "lessons": []
-  },
-  {
-    "className": "",
-    "projectName": "",
-    "media": "",
-    "caption": "",
-    "description": "",
-    "lessons": []
-  }
+    "className": "vergil",
+  "projectName": "Vergil",
+  "media": "ideas42/vergil_home.jpg",
+  "alt": "The home screen of Vergil",
+  "caption": "The entry point to the Vergil application",
+  "description": "Descriptions",
+  "lessons": ["Redux is pubsub"]
+},
+{
+  "className": "wellmoney",
+  "projectName": "WellMoney",
+  "media": "ideas42/wellmoney_home.svg",
+  "alt": "The WellMoney app home page",
+  "caption": "The WellMoney Dashboard where you can see metrics about the app",
+  "description": "xyz",
+  "lessons": [""]
+}, 
+{
+  "className": "prosperworks",
+  "projectName": "ProsperWorks",
+  "media": "ideas42/prosperworks_home.svg",
+  "alt": "The ProsperWorks Todo Item dashboard",
+  "caption": "The ProsperWorks Todo Item dashboard",
+  "description": "xyz",
+  "lessons": []
+}
 ]
