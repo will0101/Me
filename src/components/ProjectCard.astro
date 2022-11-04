@@ -26,7 +26,7 @@ const {projectName, media, description, alt, caption, className, lessons} = Astr
 
   <p set:html={description}></p>
   <ul>
-    <p>Takeaways</p>
+    <h4>Takeaways</h4>
     {lessons && lessons.map(item => <li>{item}</li>)}
     </ul>
   </div>
@@ -41,11 +41,11 @@ const {projectName, media, description, alt, caption, className, lessons} = Astr
     margin-bottom: 100px;
   }
 
-
 h3.card__title {
   font-size: calc(1.5rem + 1vw);
   margin: 0 auto;
-  margin: 25px 0;
+  margin: 40px 0;
+  color: white;
 }
 
   div figure img {
