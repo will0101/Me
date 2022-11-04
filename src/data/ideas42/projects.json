@@ -1,46 +1,46 @@
 [
   {
     "className": "",
-  "projectName": "",
-  "media": "",
-  "alt": "",
-  "caption": "",
-  "description": "",
-  "lessons": []
-},
-{
-  "className": "",
-"projectName": "",
-"media": "",
-"alt": "",
-"caption": "",
-"description": "",
-"lessons": []
-},
-{
-  "className": "",
-  "projectName": "",
-  "media": "",
-  "alt": "",
-  "caption": "",
-  "description": "",
-  "lessons": [""]
-}, 
-{
-  "className": "",
-  "projectName": "",
-  "media": "",
-  "alt": "",
-  "caption": "",
-  "description": "",
-  "lessons": []
-},
-{
-  "className": "",
-  "projectName": "",
-  "media": "",
-  "caption": "",
-  "description": "", 
-  "lessons": []
-}
+    "projectName": "",
+    "media": "",
+    "alt": "",
+    "caption": "",
+    "description": "",
+    "lessons": []
+  },
+  {
+    "className": "",
+    "projectName": "",
+    "media": "",
+    "alt": "",
+    "caption": "",
+    "description": "",
+    "lessons": []
+  },
+  {
+    "className": "",
+    "projectName": "",
+    "media": "",
+    "alt": "",
+    "caption": "",
+    "description": "",
+    "lessons": [""]
+  },
+  {
+    "className": "",
+    "projectName": "",
+    "media": "",
+    "alt": "",
+    "caption": "",
+    "description": "",
+    "lessons": []
+  },
+  {
+    "className": "",
+    "projectName": "",
+    "media": "",
+    "caption": "",
+    "description": "",
+    "lessons": []
+  }
 ]
