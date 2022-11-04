@@ -4,9 +4,9 @@
   "projectName": "Ideas42 Website",
   "media": "ideas42/studio_landing.png",
   "alt": "The ideas42 marking website",
-  "caption": "",
-  "description": "",
-  "lessons": []
+  "caption": "The marketing website for ideas42 ventures",
+  "description": "I helped build this site twice. Once in Eleventy + Nunjucks and another in Gatsby.js.",
+  "lessons": ["Having a design system is critical to move fast as an engineering team."]
   },
   {
     "className": "vergil",

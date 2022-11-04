@@ -88,5 +88,15 @@
     "name": "Storybook",
     "website": "https://storybook.js.org/",
     "companies": ["ideas42", "zendesk"]
+  },
+  {
+    "name": "PostgreSQL",
+    "website":"https://www.postgresql.org/",
+    "companies": ["ideas42"]
+  },
+  {
+    "name": "Docker",
+    "website": "https://www.docker.com/",
+    "companies": ["zendesk"]
   }
 ]
