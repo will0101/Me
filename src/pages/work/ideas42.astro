@@ -6,13 +6,104 @@ import projects from '../../data/ideas42/projects.json'
 --- 
 
 <WorkItemLayout title={`William - ideas42 career stint page`}>
-  <ProjectPage title="Venture sphere" projects={projects} company="ideas42"/>
+  <ProjectPage title="Venture Sphere" projects={projects} company="ideas42"/>
 </WorkItemLayout>
 
-<style>
+<style is:global>
+  @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500&display=swap');
 
   body {
-    background-color: gray;
+    margin: 0;
+    padding: 0;
+    font-family: 'Epilogue', sans-serif;
+	--studio-primary: #1d0354;
+	--studio-secondary: #e50053;
+	--studio-tertiary: rgb(253, 219, 18);
   }
+
+  h3 {
+  color: var(--studio-primary);
+}
+
+  header {
+    padding: 30px;
+    color: white;
+    background-color: rgba(29, 114, 226);
+  }
+
+  header h1 {
+    margin: 20px 0;
+  }
+
+  header.company__box div {
+	flex-direction: column;
+  align-items: center;
+}
+
+svg:first-of-type {
+  width: 90vw; 
+}
+
+.explanation p {
+  opacity: 0.8;
+  text-align: right;
+  padding-bottom: 100px;
+}
+
+div.technology__list {
+  padding: 30px;
+  background-color: var(--studio-primary);
+  padding-bottom: 200px;
+}
+
+div.technology__list li a {
+  border-bottom-color: var(--studio-tertiary);
+}
+
+div.project__list {
+  background-color: white;
+  margin: 30px;
+}
+
+div.project__list h2 {
+  color: var(--studio-secondary);
+  font-weight: bold;
+}
+
+div.project__list  li, 
+div.project__list  p {
+  color: black;
+}
+
+div.vergil {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+}
+
+svg[astro-icon="idea-circle"] {
+  width: 50vw;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+@media only screen and (min-width: 900px) {
+  .explanation p {
+    padding-bottom: 20px;
+  }
+
+  header.company__box div {
+		margin-bottom: 100px;
+	}
+
+  svg[astro-icon="idea-circle"] {
+  width: 70vw;
+  position: absolute;
+  left: 20%;
+  opacity: 0.5;
+  top: 25%;
+}
+}
 
 </style>

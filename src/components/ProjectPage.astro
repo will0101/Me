@@ -16,19 +16,20 @@ const { company, title , projects} = Astro.props as ProjectPageProps
 const technologies = techStack.filter(tech => tech.companies.includes(company))
 .sort((a,b) => a.name.localeCompare(b.name))
 
+const isStudio = company == 'ideas42'
 --- 
 <WorkItemLayout title="William - Zendesk career stint page">
 
-<section>
-<heading class="company__box">
+<header class="company__box">
   <div>
     <Icon name={company}/>
     <div class="explanation">
-      <h1>The {title}.</h1>
+      <h1>The {title}</h1>
       <p>The projects and tech I worked with while I was there.</p>
     </div>
+		{isStudio && <Icon name='idea-circle'/> }
   </div>
-</heading>
+</header>
 
 
 <div class="technology__list">
@@ -48,7 +49,6 @@ const technologies = techStack.filter(tech => tech.companies.includes(company))
   <h2>Projects</h2>
   {projects.map(project => <ProjectCard {...project}/>)}
 </div>
-</section>
 
 </WorkItemLayout>
 
@@ -60,7 +60,7 @@ const technologies = techStack.filter(tech => tech.companies.includes(company))
 		text-decoration: underline;
 	}
 
-heading.company__box div {
+header.company__box div {
 	display: flex;
 }
 
@@ -71,25 +71,30 @@ heading.company__box div {
 	margin-top: 5%;
 }
 
-.explanation h1 {
-	font-size: calc(2.5rem + 2vw);
+h1 {
+	font-size: calc(2rem + 2vw);
 	margin-bottom: 10px;
 	font-weight: bold;
 }
 
 .explanation p {
 	font-size: calc(1.5rem + 1vw);
-	opacity: 0.8;
+	opacity: 0.7;
 	max-width: 25ch;
+	line-height: 1.4;
 }
 
-svg[astro-icon="zendesk"] {
-		width: 55vh;
+svg:first-of-type {
+		width: 40vw;
   } 
+
+	div.technology__list p {
+		line-height: 1.4;
+	}
 
 div.technology__list ul {
 	column-count: 2;
-	line-height: 1.9;
+	line-height: 2.6;
 	font-size: 1.3rem;
 	column-gap: 0;
 	margin: 0 auto;
@@ -122,7 +127,7 @@ div.technology__list li a {
 	column-count: 3;
 }
 
-	heading.company__box div {
+	header.company__box div {
 		display: flex;
 		justify-content: space-around;
 		margin-bottom: 200px;
