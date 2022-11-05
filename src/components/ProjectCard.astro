@@ -80,7 +80,7 @@ const {
 
   div p {
     font-size: calc(1rem + 2vw);
-    line-height: 1.5;
+    line-height: var(--one-five-line-height);
   }
 
   div ul {
@@ -89,14 +89,13 @@ const {
   }
 
   div ul li {
-    line-height: 1.5;
+    line-height: var(--one-five-line-height);
     font-size: calc(1rem + 2vw);
   }
 
   div ul li::before {
     content: "-";
     padding-inline-end: 0.313rem;
-    color: var(--zen-secondary);
   }
 
   @media only screen and (min-width: 900px) {
@@ -106,11 +105,11 @@ const {
 
     div p {
       font-size: 1.5rem;
-      line-height: 1.5;
+      line-height: var(--one-five-line-height);
     }
 
     div ul li {
-      line-height: 1.5;
+      line-height: var(--one-five-line-height);
       font-size: 1.5rem;
     }
 

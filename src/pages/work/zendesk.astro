@@ -10,9 +10,11 @@ import ProjectPage from "../../components/ProjectPage.astro";
 
 <style is:global>
   /* The general styles for this page */
+
+  /* TODO: Investigate if this font works */
   @font-face {
-    font-family: "sharp-sans", "Merriweather";
     src: url("/fonts/zendesk/Sharp-Sans.otf");
+    /* font-family: "sharp-sans", "Merriweather"; */
   }
 
   body {
@@ -41,5 +43,9 @@ import ProjectPage from "../../components/ProjectPage.astro";
 
   div.technology__list li a {
     border-bottom-color: var(--zen-tertiary);
+  }
+
+  div ul li::before {
+    color: var(--zen-secondary);
   }
 </style>

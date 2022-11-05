@@ -55,7 +55,7 @@ import projects from "../../data/ideas42/projects.json";
   }
 
   .explanation p {
-    opacity: 0.8;
+    opacity: var(--opacity-8);
     text-align: right;
     padding-bottom: 6.25rem;
   }
@@ -86,6 +86,11 @@ import projects from "../../data/ideas42/projects.json";
 
   div figure:not(:first-of-type) {
     width: 10%;
+  }
+
+  
+  div ul li::before {
+    color: var(--studio-tertiary);
   }
   /* Media queries for responsiveness */
   @media only screen and (min-width: 900px) {

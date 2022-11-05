@@ -25,9 +25,6 @@
     <p>Let's chat.</p>
     <ul>
       <li>
-        <!-- <a target="_blank" class="blue__text" href="link_to_blog_post">Who am I?</a> -->
-      </li>
-      <li>
         <a class="yellow__text" href="mailto:me@williambogans.dev"
           >Send me an Email</a
         >
@@ -50,13 +47,13 @@
 <style>
   section {
     background-color: var(--primary-dark);
-    color: white;
+    color:#FFFFF0;
   }
 
   .i_am_a {
     margin-left: auto;
     width: 55%;
-    opacity: 0.8;
+    opacity: var(--opacity-8);
     margin-top: 2%;
     margin-bottom: calc(var(--font-l) * 2);
     line-height: 2;
@@ -79,12 +76,12 @@
     -webkit-transform: skewY(20deg);
     -ms-transform: skewY(20deg);
     transform: skewY(20deg);
-    margin-top: 0.938rem;
+    margin-top: var(--margin-sm);
   }
 
   .lets_chat {
-    line-height: 1.5;
-    margin-bottom: calc(var(--font-l) * 0.5);
+    line-height: var(--one-five-line-height);
+    margin-bottom: var(--margin-sm);
     font-size: var(--font-l);
   }
 
