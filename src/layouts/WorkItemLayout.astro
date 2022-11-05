@@ -1,7 +1,7 @@
 ---
-import 'reset-css'
+import "reset-css";
 export interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -9,35 +9,40 @@ const { title } = Astro.props;
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="William Bogans is a human first, remote software engineer. Who are you?"/>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="William Bogans is a human first, remote software engineer. Who are you?"
+    />
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 <style is:global>
-p,a, h2, li {
-	color: white;
-}
+  p,
+  a,
+  h2,
+  li {
+    color: white;
+  }
 
-h2 {
-	font-size: calc(2.3rem + 2vw);
-	margin-top: 50px;
-}
-h2:not(:first-of-type) {
-		margin: 50px 0;
-	}
+  h2 {
+    font-size: calc(2.3rem + 2vw);
+    margin-top: 50px;
+  }
+  h2:not(:first-of-type) {
+    margin: 50px 0;
+  }
 
-body {
-	margin: 0;
-  font-family: 'sharp-sans';
-	padding: 20px;
-}
-
+  body {
+    margin: 0;
+    font-family: "sharp-sans";
+    padding: 20px;
+  }
 </style>

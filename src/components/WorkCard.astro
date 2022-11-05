@@ -1,24 +1,23 @@
 ---
-import { Icon } from 'astro-icon';
+import { Icon } from "astro-icon";
 
 export interface Props {
-  company: string; 
+  company: string;
   description: string;
-} 
+}
 
-const { company, description } = Astro.props as Props
+const { company, description } = Astro.props as Props;
 ---
 
 <a href={`/work/${company}`}>
   <div>
     <div class="icon__wrapper">
-      <Icon name={company}/>
+      <Icon name={company} />
     </div>
     <p class="hidden__desktop">{description}</p>
     <p>Please click me.</p>
   </div>
 </a>
-
 
 <style>
   a {
@@ -27,23 +26,23 @@ const { company, description } = Astro.props as Props
 
   a[href^="/work/zendesk"] .icon__wrapper {
     background-color: rgb(3, 54, 61);
-  } 
+  }
 
   a[href^="/work/zendesk"] > div {
-  box-shadow: 10px 10px 10px 10px rgb(3, 54, 61, 0.6);
- }
+    box-shadow: 10px 10px 10px 10px rgb(3, 54, 61, 0.6);
+  }
 
- [astro-icon='zendesk'] {
+  [astro-icon="zendesk"] {
     fill: white;
   }
 
   a[href^="/work/ideas42"] .icon__wrapper {
     background-color: rgb(230, 0, 83);
-  } 
+  }
 
   a[href^="/work/ideas42"] > div {
-  box-shadow:  10px 10px 10px 10px rgba(230, 0, 83, 0.4);
- }
+    box-shadow: 10px 10px 10px 10px rgba(230, 0, 83, 0.4);
+  }
 
   .icon__wrapper {
     padding: 10vh;
@@ -65,17 +64,16 @@ const { company, description } = Astro.props as Props
   }
 
   @keyframes updown {
-  0% {
-    transform: translateY(0px);
-  }
+    0% {
+      transform: translateY(0px);
+    }
 
-  50% {
-    transform: translateY(20px);
-  }
+    50% {
+      transform: translateY(20px);
+    }
 
-  100% {
-    transform: translateY(0px);
+    100% {
+      transform: translateY(0px);
+    }
   }
-}
-
 </style>

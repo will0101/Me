@@ -1,7 +1,7 @@
 ---
-import 'reset-css'
+import "reset-css";
 export interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -9,183 +9,185 @@ const { title } = Astro.props;
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="William Bogans is a Remote Software Engineer. Who are you?"/>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="William Bogans is a Remote Software Engineer. Who are you?"
+    />
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 <style is:global>
-	@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap");
-	
-	:root {
-  --primary-dark: #0a0a0a;
-  --secondary-yellow: #fdc676;
-  --support-blue: #0095ff;
-	--support-red: rgb(230, 0, 83);
-	--tertiary-green: #31B96E;
-	--zen-green: rgb(3, 54, 61);
-	font-family: "Merriweather", serif;;
-	--font-xl: calc(152 / 16 * 1.8vw);
-	--font-l: calc(152 / 16 * 0.5vw);
-	--font-m: calc(152 / 16 * 0.3em);
-	--font-s: calc(152 / 16 * 0.4em);
-}
-	html, body {
-		margin: 0;
-		padding: 0;
-	}
+  @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap");
 
-	 main {
-		display: flex;
-		flex-direction: column;
-	}
-	
-	section {
-		text-align: center;
-	}
-	
-	h1 {
-		font-size: var(--font-xl);
-		margin-top: 5%;
-    font-weight: bold;
-	}
+  :root {
+    --primary-dark: #0a0a0a;
+    --secondary-yellow: #fdc676;
+    --support-blue: #0095ff;
+    --support-red: rgb(230, 0, 83);
+    --tertiary-green: #31b96e;
+    --zen-green: rgb(3, 54, 61);
+    font-family: "Merriweather", serif;
+    --font-xl: calc(152 / 16 * 1.8vw);
+    --font-l: calc(152 / 16 * 0.5vw);
+    --font-m: calc(152 / 16 * 0.3em);
+    --font-s: calc(152 / 16 * 0.4em);
+  }
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
 
-	h2 {
-		font-size: calc(var(--font-l) + 15vw);
-		margin-top: 10%;
-    font-weight: bold;
-	}
-
-.yellow__text {
-  color: var(--secondary-yellow);
-}
-
-.blue__text {
-  color: var(--support-blue);
-}
-
-.red__text {
-	color: var(--support-red);
-}
-
-.green__text {
-	color: var(--tertiary-green);
-}
-
-@media only screen and (min-width: 1000px) {
-	main {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-auto-rows: minmax(10%, 50vmax);
-	}
-
-	h1 {
-		font-size: calc(var(--font-xl) / 2);
-
-	}
-
-	h2 {
-		font-size: calc(var(--font-l) * 1.5);
-		margin-top: 5%;
-	}
-
-	.i_am_a {
-    font-size: calc(0.5rem + 1vw);
-		margin-bottom: calc(var(--font-l) / 2);
-	}
-
-	.lets_chat {
-		font-size: calc(var(--font-s) / 3);
-		margin-bottom: 20px;
-	}
-
-	.work p:first-child {
-		font-size: calc(0.8rem + 2vw);
-		max-width: 5ch;
-	}
-
-	.work > div {
+  main {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
   }
 
-	.card__section {
-		flex-direction: row;
-		gap: 10px;
-		margin-right: 10px;
-	}
-
-	.icon__wrapper {
-		padding: 5vh;
-	}
-
-	.card__section a > div {
-    width: 200px;
-		margin-bottom: 0px;
-	}
-
-	.card__section a:first-child {
-		width: 10vw;
-	}
-
-	.card__section a p {
-		font-size: 1rem;
-		padding: 0.5vw;
-	}
-
-	.card__section a:nth-child(even) {
-		margin-top: 200px;
-	}
-
-	.hidden__desktop {
-		display: none;
-	}
-
-
-	.now__wrapper {
-		line-height: 2.9ch;
-		margin-bottom: 0;
-	}
-
-	.now__wrapper li {
-		font-size: calc(var(--font-l) - 10px);
-		line-height: 2.5ch;
-		font-size: 1.8vw;
+  section {
+    text-align: center;
   }
 
-	.ass {
-	margin-top: 10px;
-  font-size: calc(var(--font-s) * 0.3);
-}
+  h1 {
+    font-size: var(--font-xl);
+    margin-top: 5%;
+    font-weight: bold;
+  }
 
-.blog h2 {
-	font-size: calc(var(--font-xl) / 2);
-}
+  h2 {
+    font-size: calc(var(--font-l) + 15vw);
+    margin-top: 10%;
+    font-weight: bold;
+  }
 
-.blog > p {
-	font-size: calc(var(--font-l) * 0.9);
-}
+  .yellow__text {
+    color: var(--secondary-yellow);
+  }
 
-.content__wrapper {
-	flex-direction: row;
-}
-.content__wrapper ul:first-of-type li:last-child {
-	margin-bottom: 0;
-}
-section h3 {
-font-size: 2rem;
-}
+  .blue__text {
+    color: var(--support-blue);
+  }
 
-.content__wrapper ul li {
-	font-size: 1.5rem;
-}
-}
+  .red__text {
+    color: var(--support-red);
+  }
+
+  .green__text {
+    color: var(--tertiary-green);
+  }
+
+  @media only screen and (min-width: 1000px) {
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: minmax(10%, 50vmax);
+    }
+
+    h1 {
+      font-size: calc(var(--font-xl) / 2);
+    }
+
+    h2 {
+      font-size: calc(var(--font-l) * 1.5);
+      margin-top: 5%;
+    }
+
+    .i_am_a {
+      font-size: calc(0.5rem + 1vw);
+      margin-bottom: calc(var(--font-l) / 2);
+    }
+
+    .lets_chat {
+      font-size: calc(var(--font-s) / 3);
+      margin-bottom: 20px;
+    }
+
+    .work p:first-child {
+      font-size: calc(0.8rem + 2vw);
+      max-width: 5ch;
+    }
+
+    .work > div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .card__section {
+      flex-direction: row;
+      gap: 10px;
+      margin-right: 10px;
+    }
+
+    .icon__wrapper {
+      padding: 5vh;
+    }
+
+    .card__section a > div {
+      width: 200px;
+      margin-bottom: 0px;
+    }
+
+    .card__section a:first-child {
+      width: 10vw;
+    }
+
+    .card__section a p {
+      font-size: 1rem;
+      padding: 0.5vw;
+    }
+
+    .card__section a:nth-child(even) {
+      margin-top: 200px;
+    }
+
+    .hidden__desktop {
+      display: none;
+    }
+
+    .now__wrapper {
+      line-height: 2.9ch;
+      margin-bottom: 0;
+    }
+
+    .now__wrapper li {
+      font-size: calc(var(--font-l) - 10px);
+      line-height: 2.5ch;
+      font-size: 1.8vw;
+    }
+
+    .ass {
+      margin-top: 10px;
+      font-size: calc(var(--font-s) * 0.3);
+    }
+
+    .blog h2 {
+      font-size: calc(var(--font-xl) / 2);
+    }
+
+    .blog > p {
+      font-size: calc(var(--font-l) * 0.9);
+    }
+
+    .content__wrapper {
+      flex-direction: row;
+    }
+    .content__wrapper ul:first-of-type li:last-child {
+      margin-bottom: 0;
+    }
+    section h3 {
+      font-size: 2rem;
+    }
+
+    .content__wrapper ul li {
+      font-size: 1.5rem;
+    }
+  }
 </style>

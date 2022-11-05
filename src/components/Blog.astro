@@ -1,55 +1,47 @@
 ---
-// const personalPosts = await Astro.glob('../posts/personal/*.md') 
-// const technicalPosts = await Astro.glob('../posts/technical/*.md') 
+// const personalPosts = await Astro.glob('../posts/personal/*.md')
+// const technicalPosts = await Astro.glob('../posts/technical/*.md')
 ---
 
 <section class="blog">
-  <h2>
-    Blog
-  </h2>
+  <h2>Blog</h2>
 
   <p>
     I rite and <span>sometimes</span> it's <span class="legible">legible.</span>
   </p>
 
   <div class="content__wrapper">
-
-  <section>
-    <!-- <h3>About me</h3> -->
-    <!-- Create a PostList component -->
-    <!-- <ul>
+    <section>
+      <!-- <h3>About me</h3> -->
+      <!-- Create a PostList component -->
+      <!-- <ul>
       {personalPosts.map((post) => (
         <li>
           <a href={post.frontmatter.url}>{post.frontmatter.title}</a>
           </li>
           ))}  
     </ul> -->
-  </section>
-
+    </section>
 
     <section>
-
-    <!-- <h3>Technical Literature</h3> -->
-    <!-- <ul>
+      <!-- <h3>Technical Literature</h3> -->
+      <!-- <ul>
       {technicalPosts.map((post) => (
         <li>
           <a href={post.frontmatter.url}>{post.frontmatter.title}</a>
           </li>
           ))}  
     </ul> -->
-    <p>Coming soon</p>
-  </section>
-
-</div>
-
+      <p>Coming soon</p>
+    </section>
+  </div>
 </section>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
-
+  @import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap");
 
   section {
-   height: clamp(fit-content);
+    height: clamp(fit-content);
   }
   .blog {
     background-color: var(--primary-dark);
@@ -69,18 +61,18 @@
 
   .blog h2 {
     font-size: calc(var(--font-xl) * 1.9);
-    font-family: 'Reenie Beanie', cursive;
-  }
-  
-  section p {
-    font-family: 'Reenie Beanie', cursive;
-     opacity: 0.8;
-     padding: 0 20px;
-     font-size: calc(var(--font-l) * 2);
-     margin-top: 5%;
+    font-family: "Reenie Beanie", cursive;
   }
 
-   p span:first-of-type {
+  section p {
+    font-family: "Reenie Beanie", cursive;
+    opacity: 0.8;
+    padding: 0 20px;
+    font-size: calc(var(--font-l) * 2);
+    margin-top: 5%;
+  }
+
+  p span:first-of-type {
     text-decoration: underline;
   }
 
@@ -99,6 +91,4 @@
   a {
     text-decoration: underline;
   }
-
 </style>
- 

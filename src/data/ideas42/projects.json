@@ -1,38 +1,44 @@
 [
   {
     "className": "studio-website",
-  "projectName": "Ideas42 Website",
-  "media": "ideas42/studio_landing.png",
-  "alt": "The ideas42 marking website",
-  "caption": "The marketing website for ideas42 ventures",
-  "description": "I helped build this site twice. Once in Eleventy + Nunjucks and another in Gatsby.js.",
-  "lessons": ["Having a design system is critical to move fast as an engineering team."]
+    "projectName": "Ideas42 Website",
+    "link": "https://www.ideas42ventures.com",
+    "media": "ideas42/studio_landing.png",
+    "alt": "The ideas42 marking website",
+    "caption": "The marketing website for ideas42 ventures",
+    "description": "This was our marketing website. I helped build this site twice. Once in Eleventy + Nunjucks and another in Gatsby.js.",
+    "lessons": [
+      "Having a design system is critical to move fast as an engineering team."
+    ]
   },
   {
     "className": "vergil",
-  "projectName": "Vergil",
-  "media": "ideas42/vergil_home.jpg",
-  "alt": "The home screen of Vergil",
-  "caption": "The entry point to the Vergil application",
-  "description": "Descriptions",
-  "lessons": ["Redux is pubsub"]
-},
-{
-  "className": "wellmoney",
-  "projectName": "WellMoney",
-  "media": "ideas42/wellmoney_home.svg",
-  "alt": "The WellMoney app home page",
-  "caption": "The WellMoney Dashboard where you can see metrics about the app",
-  "description": "xyz",
-  "lessons": [""]
-}, 
-{
-  "className": "prosperworks",
-  "projectName": "ProsperWorks",
-  "media": "ideas42/prosperworks_home.svg",
-  "alt": "The ProsperWorks Todo Item dashboard",
-  "caption": "The ProsperWorks Todo Item dashboard",
-  "description": "xyz",
-  "lessons": []
-}
+    "projectName": "Vergil",
+    "link": "https://www.vergil.app/",
+    "media": "ideas42/vergil_home.jpg",
+    "alt": "The home screen of Vergil",
+    "caption": "The entry point to the Vergil application",
+    "description": "Descriptions",
+    "lessons": ["Redux is pubsub"]
+  },
+  {
+    "className": "wellmoney",
+    "projectName": "WellMoney",
+    "link": "https://well-money.com/",
+    "media": "ideas42/wellmoney_home.svg",
+    "alt": "The WellMoney app home page",
+    "caption": "The WellMoney Dashboard where you can see metrics about the app",
+    "description": "xyz",
+    "lessons": [""]
+  },
+  {
+    "className": "prosperworks",
+    "projectName": "ProsperWorks",
+    "link": "https://www.getprosperworks.com/",
+    "media": "ideas42/prosperworks_home.svg",
+    "alt": "The ProsperWorks To Do Item dashboard",
+    "caption": "The ProsperWorks To Do Item dashboard",
+    "description": "xyz",
+    "lessons": []
+  }
 ]

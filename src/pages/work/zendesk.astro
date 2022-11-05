@@ -1,49 +1,45 @@
---- 
+---
 import WorkItemLayout from "../../layouts/WorkItemLayout.astro";
-import projects from '../../data/zendesk/projects.json'
+import projects from "../../data/zendesk/projects.json";
 import ProjectPage from "../../components/ProjectPage.astro";
---- 
+---
+
 <WorkItemLayout title="William - Zendesk career stint page">
-  <ProjectPage title="Zortfolio" projects={projects} company='zendesk'/>
+  <ProjectPage title="Zortfolio" projects={projects} company="zendesk" />
 </WorkItemLayout>
 
 <style is:global>
   /* The general styles for this page */
   @font-face {
-    font-family: 'sharp-sans', 'Merriweather';
-    src: url('/fonts/zendesk/Sharp-Sans.otf');
+    font-family: "sharp-sans", "Merriweather";
+    src: url("/fonts/zendesk/Sharp-Sans.otf");
   }
-  
+
   body {
-  background-color: var(--zen-green); 
-  --zen-green: rgb(3, 54, 61);
-	--zen-primary: #228f67;
-	--zen-secondary: #efc93d;
-	--zen-tertiary: #f6c8be;
-}
+    background-color: var(--zen-green);
+    --zen-green: rgb(3, 54, 61);
+    --zen-primary: #228f67;
+    --zen-secondary: #efc93d;
+    --zen-tertiary: #f6c8be;
+  }
 
-strong {
-  color: var(--zen-tertiary);
-}
+  strong {
+    color: var(--zen-tertiary);
+  }
 
+  body .company__box svg {
+    fill: var(--zen-primary);
+  }
 
-body .company__box svg {
-  fill: var(--zen-primary);
-}
+  .company__box h1 {
+    color: var(--zen-primary);
+  }
 
-.company__box h1 {
-	color: var(--zen-primary);
-}
+  .explanation p {
+    color: var(--zen-secondary);
+  }
 
-.explanation p {
-  color: var(--zen-secondary);
-}
-
-div.technology__list li a {
-  border-bottom-color: var(--zen-tertiary);
-}
-
-
-
+  div.technology__list li a {
+    border-bottom-color: var(--zen-tertiary);
+  }
 </style>
-

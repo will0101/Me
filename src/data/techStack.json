@@ -83,7 +83,7 @@
     "name": "Sentry",
     "website": "https://sentry.io/welcome/",
     "companies": ["ideas42"]
-  }, 
+  },
   {
     "name": "Storybook",
     "website": "https://storybook.js.org/",
@@ -91,12 +91,27 @@
   },
   {
     "name": "PostgreSQL",
-    "website":"https://www.postgresql.org/",
+    "website": "https://www.postgresql.org/",
     "companies": ["ideas42"]
   },
   {
     "name": "Docker",
     "website": "https://www.docker.com/",
-    "companies": ["zendesk"]
+    "companies": ["zendesk", "ideas42"]
+  },
+  {
+    "name": "Express.js",
+    "website": "https://expressjs.com/",
+    "companies": ["ideas42"]
+  },
+  {
+    "name": "Heroku",
+    "website": "https://www.heroku.com/",
+    "companies": ["ideas42"]
+  },
+  {
+    "name": "Github",
+    "website": "https://github.com/",
+    "companies": ["ideas42", "zendesk"]
   }
 ]
