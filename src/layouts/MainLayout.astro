@@ -28,17 +28,24 @@ const { title } = Astro.props;
   @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap");
 
   :root {
+    /* Colors */
     --primary-dark: #0a0a0a;
     --secondary-yellow: #fdc676;
     --support-blue: #0095ff;
     --support-red: rgb(230, 0, 83);
     --tertiary-green: #31b96e;
     --zen-green: rgb(3, 54, 61);
-    font-family: "Merriweather", serif;
+    /* Font sizes */
     --font-xl: calc(152 / 16 * 1.8vw);
-    --font-l: calc(152 / 16 * 0.5vw);
+    /* Large works */
+    --font-l: calc(152 / 16 * 0.5vw); 
+    --font-large-responsive: calc(var(--font-l) + 2vw);
     --font-m: calc(152 / 16 * 0.3em);
     --font-s: calc(152 / 16 * 0.4em);
+    /* Fonts */
+    --main-ff: "Merriweather", serif;
+    --work-ff: "Lakki Reddy", 'Times';
+    /* Spacing */
     --one-five-line-height: 1.5;
     --opacity-8: 0.8;
     --margin-sm: 1rem;
@@ -47,6 +54,7 @@ const { title } = Astro.props;
   body {
     margin: 0;
     padding: 0;
+    font-family: var(--main-ff);
   }
 
   main {

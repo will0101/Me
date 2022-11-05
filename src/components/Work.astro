@@ -24,38 +24,31 @@ import companies from "../data/companies.json";
 </section>
 
 <style>
-  @import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
   @import url("https://fonts.googleapis.com/css2?family=Lakki+Reddy&display=swap");
 
   section {
     background: var(--secondary-yellow);
   }
 
-  .work > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  section h2, 
+  section p {
+    font-family: var(--work-ff);
   }
 
-  section h2 {
-    font-family: "Lakki Reddy", cursive;
+
+  .work > div,
+  .card__section {
+    display: flex;
+    flex-direction: column;
   }
 
   .work p {
     font-weight: 700;
     line-height: 1.2;
-    text-align: left;
-    font-family: "Lakki Reddy", cursive;
-    margin-bottom: 3.125rem;
+    margin-bottom: calc(var(--margin-sm) * 2);
     padding-left: 2%;
-    opacity: 0.86;
-    font-size: calc(var(--font-l) + 2vw);
-    text-align: center;
-  }
-
-  .card__section {
-    display: flex;
-    flex-direction: column;
+    opacity: var(--opacity-8);
+    font-size: var(--font-large-responsive);
   }
 
   .developer {
