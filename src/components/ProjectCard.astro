@@ -45,27 +45,25 @@ const {
 
 <style>
   div:not(:last-of-type) {
-    margin-bottom: 100px;
+    margin-bottom: 6.25rem;
   }
 
   h3.card__title {
     font-size: calc(1.5rem + 1vw);
     margin: 0 auto;
-    margin: 40px 0;
+    margin: 2.5rem 0;
     color: white;
   }
-
+  
   div figure img {
     width: 90vw;
     border-radius: 2px;
     object-fit: cover;
-    display: block;
   }
 
   div figure {
     position: relative;
-    display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     width: min-content;
   }
 
@@ -75,7 +73,7 @@ const {
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 15px;
+    padding: 0.938rem;
     text-align: center;
     color: white;
   }
@@ -86,7 +84,7 @@ const {
   }
 
   div ul {
-    margin-top: 20px;
+    margin-top: 1.25rem;
     text-align: left;
   }
 
@@ -97,7 +95,7 @@ const {
 
   div ul li::before {
     content: "-";
-    padding-inline-end: 5px;
+    padding-inline-end: 0.313rem;
     color: var(--zen-secondary);
   }
 
@@ -111,14 +109,17 @@ const {
       line-height: 1.5;
     }
 
-    div p,
-    div ul li {
-      margin-left: 20px;
-    }
-
     div ul li {
       line-height: 1.5;
       font-size: 1.5rem;
+    }
+
+    .content__wrapper {
+      display: flex;
+    }
+    .content__wrapper div {
+      margin-left: 1.25rem;
+      margin-top: 1.25rem;
     }
   }
 </style>
