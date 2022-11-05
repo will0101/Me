@@ -1,6 +1,6 @@
 <section class="now">
   <h2>Now</h2>
-
+  <p>What am I up to?</p>
   <ul class="now__wrapper">
     <li>
       Working with <a
@@ -52,19 +52,18 @@
 </section>
 
 <style>
-  @import url("https://fonts.googleapis.com/css2?family=Passion+One&display=swap");
   @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
 
-  section {
-    font-family: "Passion One", cursive;
-    height: fit-content;
+  section h2 {
+    font-family: "Alfa Slab One", cursive;
   }
 
-  section h2 {
-    font-weight: bold;
-    font-family: "Alfa Slab One", cursive;
-    margin-bottom: 5%;
+  section p {
+    font-size: var(--font-m);
+    opacity: 0.5;
+    margin:  calc(var(--margin-sm) * 2);
   }
+
 
   .now__wrapper {
     border: 5px dashed black;
@@ -72,14 +71,18 @@
     text-align: left;
     margin-top: 1.5em;
     margin-bottom: 18.75rem;
-    line-height: 1.8;
+    line-height: 2.2;
     padding: 1rem;
-    margin: 0 3.125rem;
+    margin: 0 1.125rem;
     margin-bottom: 12.5rem;
   }
 
+  .now__wrapper a {
+    text-decoration: underline;
+  }
+
   .now__wrapper li {
-    font-size: calc(2.5em);
+    font-size: var(--font-s)
   }
 
   .now__wrapper li:nth-of-type(1)::before {
@@ -110,5 +113,8 @@
     width: 100%;
     text-align: center;
     font-size: calc(var(--font-s) * 0.5);
+  }
+  .ass a {
+    text-decoration: underline;
   }
 </style>
