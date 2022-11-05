@@ -18,27 +18,42 @@ import ProjectPage from "../../components/ProjectPage.astro";
   }
 
   body {
-    background-color: var(--zen-green);
     --zen-green: rgb(3, 54, 61);
     --zen-primary: #228f67;
     --zen-secondary: #efc93d;
     --zen-tertiary: #f6c8be;
+    color: white;
+    background-color: var(--zen-green);
   }
+  
 
   strong {
     color: var(--zen-tertiary);
   }
 
-  body .company__box svg {
+  .company__box svg {
     fill: var(--zen-primary);
+    transform: scale(1.1);
+    align-self: start;
+    margin-top: 11%;
+  }
+
+  .company__box {
+    background-color: var(--zen-secondary);
   }
 
   .company__box h1 {
     color: var(--zen-primary);
+    max-width: 10ch;
+  }
+
+  .explanation {
+    text-align: left;
   }
 
   .explanation p {
-    color: var(--zen-secondary);
+    color: var(--zen-primary);
+    font-weight: bold;
   }
 
   div.technology__list li a {

@@ -13,8 +13,6 @@ import projects from "../../data/ideas42/projects.json";
 
   /* The general styles for the page */
   body {
-    margin: 0;
-    padding: 0;
     font-family: "Epilogue", sans-serif;
     --studio-primary: rgb(29, 3, 84);
     --studio-secondary: #e50053;
@@ -22,27 +20,17 @@ import projects from "../../data/ideas42/projects.json";
     background-color: var(--studio-primary);
   }
 
-  h3 {
-    font-weight: bold;
-  }
 
   h4 {
     color: var(--studio-tertiary);
-    font-size: calc(1.6rem + 1vw);
-    margin: 1.25rem 0;
   }
   strong {
     color: var(--studio-tertiary);
   }
 
   header {
-    padding: 1.875rem;
     color: white;
     background-color: rgba(29, 114, 226);
-  }
-
-  header h1 {
-    margin: 1.25rem 0;
   }
 
   header.company__box div {
@@ -54,11 +42,6 @@ import projects from "../../data/ideas42/projects.json";
     width: 90vw;
   }
 
-  .explanation p {
-    opacity: var(--opacity-8);
-    text-align: right;
-    padding-bottom: 6.25rem;
-  }
 
   svg[astro-icon="idea-circle"] {
     width: 50vw;
@@ -67,21 +50,12 @@ import projects from "../../data/ideas42/projects.json";
     left: 10%;
   }
 
-  div.technology__list {
-    padding: 1.875rem;
-  }
-
   div.technology__list li a {
     border-bottom-color: var(--studio-tertiary);
   }
-
-  div.project__list {
-    margin: 1.875rem;
-  }
-
+  
   div.project__list h2 {
     color: var(--studio-secondary);
-    font-weight: bold;
   }
 
   div figure:not(:first-of-type) {

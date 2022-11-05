@@ -49,10 +49,10 @@ const {
   }
 
   h3.card__title {
-    font-size: calc(1.5rem + 1vw);
     margin: 0 auto;
     margin: 2.5rem 0;
     color: white;
+    font-size: var(--font-m);
   }
   
   div figure img {
@@ -79,9 +79,9 @@ const {
     color: white;
   }
 
-  div p {
-    font-size: calc(1rem + 2vw);
+  div p, div li {
     line-height: var(--one-five-line-height);
+    font-size: var(--font-xs);
   }
 
   div ul {
@@ -89,29 +89,19 @@ const {
     text-align: left;
   }
 
-  div ul li {
-    line-height: var(--one-five-line-height);
-    font-size: calc(1rem + 2vw);
-  }
-
   div ul li::before {
     content: "-";
     padding-inline-end: 0.313rem;
   }
 
-  @media only screen and (min-width: 900px) {
+  @media only screen and (min-width: 1200px) {
     div figure img {
       width: 60vw;
     }
 
-    div p {
-      font-size: 1.5rem;
+    div p, div li {
       line-height: var(--one-five-line-height);
-    }
-
-    div ul li {
-      line-height: var(--one-five-line-height);
-      font-size: 1.5rem;
+      font-size: var(--font-xs);
     }
 
     .content__wrapper {
@@ -122,4 +112,13 @@ const {
       margin-top: 1.25rem;
     }
   }
+
+  @media screen and (min-width: 900px) and (min-height: 1100px) {
+    div figure img {
+      width:  95vw;
+    }
+    .content__wrapper {
+      flex-direction: column;
+    }
+  } 
 </style>

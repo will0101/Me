@@ -28,6 +28,11 @@ const { title } = Astro.props;
 
 :root {
     --one-five-line-height: 2;
+    --font-xl: calc(152 / 16 * 1.8vw);
+    --font-l: calc((148 / 16 * 1vw) + 2vw); 
+    --font-m: calc(1rem + 3vw);
+    --font-s: calc(1.3rem + 1.2vw);
+    --font-xs: calc(1.2rem + 1vh)
   }
 
   p,
@@ -37,14 +42,65 @@ const { title } = Astro.props;
     color: white;
   }
 
+  h1 {
+    margin: 1.25rem 0;
+    font-size: var(--font-xl);
+  }
+
   h2 {
-    font-size: calc(2.3rem + 2vw);
+    font-size: var(--font-l);
     margin-top: 3.125rem;
+  }
+
+  h3 {
+    font-weight: bold;
+  }
+
+
+  h4 {
+    font-size: var(--font-m);
+    margin: 1.25rem 0;
   }
 
   body {
     margin: 0;
-    padding: 1.25rem;
+    padding: 0;
+  }
+
+  header {
+    padding: 1.875rem;
+  }
+
+  header h1 {
+    margin: 1.25rem 0;
+  }
+
+  svg:first-of-type {
+    width: 90vw;
+  }
+
+  header.company__box div {
+    align-items: center;
+  }
+
+
+  .technology__list,
+  .project__list {
+    padding: 1.875rem;
+  }
+
+  .technology__list p {
+    font-size: var(--font-m);
+  }
+
+  .explanation p {
+    opacity: 0.8;
+    text-align: center;
+    padding-bottom: 6.25rem;
+  }
+
+  div.project__list h2 {
+    font-weight: bold;
   }
  
 </style>

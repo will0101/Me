@@ -99,19 +99,18 @@ const isStudio = company == "ideas42";
   div.technology__list ul {
     column-count: 2;
     line-height: 2.6;
-    font-size: 1.3rem;
     column-gap: 0;
     margin: 0 auto;
   }
 
   .technology__list p {
-    font-size: calc(1rem + 1.1vw);
+    font-size: var(--font-m);
     opacity: 0.7;
     margin: 1.25rem 0;
   }
 
   div.technology__list li {
-    width: fit-content;
+    font-size: calc(var(--font-s) + 0.3vw);
   }
 
   div.technology__list li a {
