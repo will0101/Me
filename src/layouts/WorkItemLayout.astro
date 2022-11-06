@@ -42,6 +42,11 @@ const { title } = Astro.props;
     color: white;
   }
 
+  strong {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
   h1 {
     margin: 1.25rem 0;
     font-size: var(--font-xl);
@@ -55,6 +60,8 @@ const { title } = Astro.props;
   h3 {
     font-weight: bold;
   }
+
+  
 
 
   h4 {
@@ -73,16 +80,35 @@ const { title } = Astro.props;
 
   header h1 {
     margin: 1.25rem 0;
-  }
-
-  svg:first-of-type {
-    width: 90vw;
+    font-size: calc(2rem + 2vw);
+    font-weight: bold;
   }
 
   header.company__box div {
+    display: flex;
     align-items: center;
   }
 
+  svg:first-of-type {
+    width: 40vw;
+  }
+
+  .explanation {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.25rem;
+    margin-top: 5%;
+  }
+
+  .explanation p {
+    font-size: calc(1.5rem + 1vw);
+    opacity: 0.7;
+    max-width: 25ch;
+    line-height: 1.4;
+    padding-bottom: 6.25rem;
+    text-align: left;
+    
+  }
 
   .technology__list,
   .project__list {
@@ -91,16 +117,51 @@ const { title } = Astro.props;
 
   .technology__list p {
     font-size: var(--font-m);
+    opacity: 0.7;
+    margin: 1.25rem 0;
+    line-height: 1.4;
   }
 
-  .explanation p {
-    opacity: 0.8;
-    text-align: center;
-    padding-bottom: 6.25rem;
+  div.technology__list ul {
+    column-count: 2;
+    line-height: 2.6;
+    column-gap: 0;
+    margin: 0 auto;
+  }
+
+  div.technology__list li {
+    font-size: calc(var(--font-s) + 0.3vw);
+  }
+
+  div.technology__list li a {
+    text-decoration: none;
+    padding-bottom: 0.313rem;
+    border-bottom-style: dashed;
+    border-bottom-width: 0.194rem;
   }
 
   div.project__list h2 {
     font-weight: bold;
+  }
+
+  
+
+  @media only screen and (min-width: 1000px) {
+    .explanation p {
+    text-align: right;
+  }
+    div.technology__list {
+      margin-bottom: 6.25rem;
+    }
+    div.technology__list ul {
+      column-count: 3;
+    }
+
+    header.company__box div {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 12.5rem;
+    }
   }
  
 </style>
