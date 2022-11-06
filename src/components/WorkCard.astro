@@ -40,6 +40,10 @@ const { company, description } = Astro.props as Props;
     background-color: white;
     text-align: left;
   }
+  
+  .icon__wrapper {
+      padding: 5vh;
+    }
 
   a p:last-of-type {
     text-decoration: underline;
@@ -88,7 +92,8 @@ const { company, description } = Astro.props as Props;
 
   @media only screen and (min-width: 1000px) {
     svg[astro-icon="ideas42"] {
-    transform: scale(1.5);
+      padding: 1px;
+      transform: scale(1.3);
   }
   a p {
     text-align: center;

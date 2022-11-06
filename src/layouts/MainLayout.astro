@@ -1,5 +1,4 @@
 ---
-import "reset-css";
 export interface Props {
   title: string;
 }
@@ -19,6 +18,7 @@ const { title } = Astro.props;
       name="description"
       content="William Bogans is a Remote Software Engineer. Who are you?"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   </head>
   <body>
     <slot />
@@ -124,7 +124,7 @@ const { title } = Astro.props;
     }
 
     .lets_chat {
-      font-size: calc(var(--font-s) / 3);
+      font-size: calc(1.3rem + 0.2vw);
       margin-bottom: 1.25rem;
     }
 
@@ -143,10 +143,6 @@ const { title } = Astro.props;
       flex-direction: row;
       gap: 10px;
       margin-right: 0.625rem;
-    }
-
-    .icon__wrapper {
-      padding: 5vh;
     }
 
     .card__section a > div {
