@@ -18,7 +18,10 @@ const { title } = Astro.props;
       name="description"
       content="William Bogans is a Remote Software Engineer. Who are you?"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
   </head>
   <body>
     <slot />
@@ -38,12 +41,12 @@ const { title } = Astro.props;
     /* Font sizes */
     --font-xl: calc(152 / 16 * 1.8vw);
     /* Large works */
-    --font-l: calc((152 / 16 * 0.5vw) + 2vw); 
+    --font-l: calc((152 / 16 * 0.5vw) + 2vw);
     --font-m: calc((60 / 16 * 0.3em) + 2vw);
     --font-s: calc((50 / 16 * 0.4em) + 1vw);
     /* Fonts */
     --main-ff: "Merriweather", serif;
-    --work-ff: "Lakki Reddy", 'Times';
+    --work-ff: "Lakki Reddy", "Times";
     /* Spacing */
     --one-five-line-height: 1.5;
     --opacity-8: 0.8;

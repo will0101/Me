@@ -24,7 +24,15 @@ const {
 
 <div class={className}>
   <h3 class="card__title">
-    {link ? <a target="_blank" href={link}>{projectName}</a> : projectName }
+    {
+      link ? (
+        <a target="_blank" href={link}>
+          {projectName}
+        </a>
+      ) : (
+        projectName
+      )
+    }
   </h3>
 
   <div class="content__wrapper">
@@ -54,7 +62,7 @@ const {
     color: white;
     font-size: var(--font-m);
   }
-  
+
   div figure img {
     width: 90vw;
     border-radius: 2px;
@@ -79,7 +87,8 @@ const {
     color: white;
   }
 
-  div p, div li {
+  div p,
+  div li {
     line-height: var(--one-five-line-height);
     font-size: var(--font-xs);
   }
@@ -99,7 +108,8 @@ const {
       width: 60vw;
     }
 
-    div p, div li {
+    div p,
+    div li {
       line-height: var(--one-five-line-height);
       font-size: var(--font-xs);
     }
@@ -115,10 +125,10 @@ const {
 
   @media screen and (min-width: 900px) and (min-height: 1100px) {
     div figure img {
-      width:  95vw;
+      width: 95vw;
     }
     .content__wrapper {
       flex-direction: column;
     }
-  } 
+  }
 </style>

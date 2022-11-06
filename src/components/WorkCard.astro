@@ -20,8 +20,7 @@ const { company, description } = Astro.props as Props;
 </a>
 
 <style>
-
-.icon__wrapper {
+  .icon__wrapper {
     padding: 10vh;
   }
 
@@ -40,15 +39,14 @@ const { company, description } = Astro.props as Props;
     background-color: white;
     text-align: left;
   }
-  
+
   .icon__wrapper {
-      padding: 5vh;
-    }
+    padding: 5vh;
+  }
 
   a p:last-of-type {
     text-decoration: underline;
   }
-
 
   /* Zendesk card */
   a[href^="/work/zendesk"] .icon__wrapper {
@@ -56,7 +54,7 @@ const { company, description } = Astro.props as Props;
   }
 
   a[href^="/work/zendesk"] > div {
-    box-shadow: var(--box-shadow)  rgb(3, 54, 61, 0.6);
+    box-shadow: var(--box-shadow) rgb(3, 54, 61, 0.6);
   }
 
   svg[astro-icon="zendesk"] {
@@ -94,9 +92,9 @@ const { company, description } = Astro.props as Props;
     svg[astro-icon="ideas42"] {
       padding: 1px;
       transform: scale(1.3);
-  }
-  a p {
-    text-align: center;
-  }
+    }
+    a p {
+      text-align: center;
+    }
   }
 </style>
