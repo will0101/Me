@@ -22,14 +22,12 @@ const isStudio = company == "ideas42";
 
 <WorkItemLayout title="William - Zendesk career stint page">
   <header class="company__box">
-    <div>
-      <Icon name={company} />
-      <div class="explanation">
-        <h1>The {title}</h1>
-        <p>The projects and tech I worked with while I was there.</p>
-      </div>
-      {isStudio && <Icon name="idea-circle" />}
+    {isStudio && <Icon name={company} />}
+    <div class="explanation">
+      <h1>The {title}</h1>
+      <p>The projects and tech I worked with while I was there.</p>
     </div>
+    {isStudio && <Icon name="idea-circle" />}
   </header>
 
   <div class="technology__list">

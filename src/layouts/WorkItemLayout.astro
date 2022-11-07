@@ -54,6 +54,7 @@ const { title } = Astro.props;
   h2 {
     font-size: var(--font-l);
     margin-top: 3.125rem;
+    font-weight: 600;
   }
 
   h3 {
@@ -76,8 +77,9 @@ const { title } = Astro.props;
 
   header h1 {
     margin: 1.25rem 0;
-    font-size: calc(2rem + 2vw);
+    font-size: var(--font-l);
     font-weight: bold;
+    text-align: left;
   }
 
   header.company__box div {
@@ -97,12 +99,12 @@ const { title } = Astro.props;
   }
 
   .explanation p {
-    font-size: calc(1.5rem + 1vw);
+    font-size: var(--font-m);
     opacity: 0.7;
-    max-width: 25ch;
+    max-width: 35ch;
     line-height: 1.4;
-    padding-bottom: 6.25rem;
-    text-align: left;
+    padding-bottom: 5.25rem;
+    text-align: right;
   }
 
   .technology__list,
@@ -142,10 +144,9 @@ const { title } = Astro.props;
   @media only screen and (min-width: 1000px) {
     .explanation p {
       text-align: right;
+      padding-bottom: 1rem;
     }
-    div.technology__list {
-      margin-bottom: 6.25rem;
-    }
+
     div.technology__list ul {
       column-count: 3;
     }
