@@ -1,4 +1,4 @@
-<section class="name" id="name">
+<section class="name">
   <h1>
     William
     <span class="yellow__text">M.</span>
@@ -55,13 +55,13 @@
     width: 55%;
     opacity: var(--opacity-8);
     margin-top: 2%;
-    margin-bottom: calc(var(--font-l) * 2);
+    margin-bottom: 2vw;
     line-height: 2;
     font-size: calc(var(--font-l) - 2vw);
   }
 
   .i_am_a p:nth-child(2) {
-    margin-left: 30%;
+    margin-left: 10%;
   }
   .i_am_a p:nth-child(3) {
     margin-left: 10%;
@@ -80,15 +80,35 @@
   }
 
   .lets_chat {
-    line-height: 1.2;
+    line-height: 1.5;
+    padding-bottom: 50px;
   }
 
   .lets_chat p {
     opacity: 0.75;
     font-weight: bold;
+    font-size: var(--font-xs);
   }
 
   .lets_chat a {
     text-decoration: underline;
+    font-size: var(--font-xs);
+  }
+
+  @media only screen and (min-width: 900px) {
+
+
+  .i_am_a {
+    line-height: 1.5;
+    font-size: var(--font-xs);
+  }
+
+    .lets_chat p {
+    font-size: var(--font-xs);
+  }
+
+  .lets_chat a {
+    font-size: var(--font-s);
+  }
   }
 </style>
