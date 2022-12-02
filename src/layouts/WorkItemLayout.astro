@@ -26,10 +26,10 @@ const { title } = Astro.props;
 </html>
 <style is:global>
   :root {
-    --one-five-line-height: 2;
+    --one-five-line-height: 1.5;
     --font-xl: calc(152 / 16 * 1.8vw);
     --font-l: calc((148 / 16 * 1vw) + 2vw);
-    --font-m: calc(1rem + 3vw);
+    --font-m: calc(1rem + 2vw);
     --font-s: calc(1.3rem + 1.2vw);
     --font-xs: calc(1.2rem + 1vh);
   }
@@ -111,11 +111,10 @@ const { title } = Astro.props;
     padding: 1.875rem;
   }
 
-  .technology__list p {
+  .technology__list p, .project__list p {
     font-size: var(--font-m);
-    opacity: 0.9;
+    line-height: var(--one-five-line-height);
     margin: 1.25rem 0;
-    line-height: 1.4;
   }
 
   div.technology__list ul {

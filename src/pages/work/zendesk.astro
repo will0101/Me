@@ -25,6 +25,7 @@ import ProjectPage from "../../components/ProjectPage.astro";
     color: var(--zen-tertiary);
   }
 
+  /* HEADER  */
   .company__box svg {
     fill: var(--text-color);
     width: 50vw;
@@ -82,12 +83,17 @@ import ProjectPage from "../../components/ProjectPage.astro";
   }
 
   .explanation p {
-    color: var(--text-color);
     font-weight: bold;
-    text-align: center;
     opacity: 1;
     max-width: 30ch;
   }
+
+  div figure img {
+    width: 90vw;
+    height: 80vw;
+  }
+
+  /* The project and technology list */
 
   .technology__list,
   .project__list {
@@ -102,6 +108,7 @@ import ProjectPage from "../../components/ProjectPage.astro";
     color: var(--zen-secondary);
   }
 
+  /* Mobile styles */
   @media only screen and (min-width: 900px) {
     header h1 {
       font-size: var(--font-l);
