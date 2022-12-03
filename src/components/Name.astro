@@ -45,6 +45,7 @@
 </section>
 
 <style>
+
   section {
     background-color: var(--primary-dark);
     color: #fffff0;
@@ -55,9 +56,9 @@
     width: 55%;
     opacity: var(--opacity-8);
     margin-top: 2%;
-    margin-bottom: 10vw;
     line-height: 2;
-    font-size: calc(var(--font-l) - 2vw);
+    font-size: calc(0.7rem + 1.66vw);
+    margin-top: 5vw;
   }
 
   .i_am_a p:nth-child(2) {
@@ -81,33 +82,34 @@
 
   .lets_chat {
     line-height: 1.5;
-    padding-bottom: 50px;
+    margin-top: 5%;
+    margin-bottom: 50px;
   }
 
   .lets_chat p {
     opacity: 0.75;
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: calc(1rem + 0.8vw);
   }
 
   .lets_chat a {
     text-decoration: underline;
-    font-size: 1.5em;
+    font-size: calc(1rem + 1vw);
   }
 
   @media only screen and (min-width: 900px) {
   .i_am_a {
     line-height: 1.5;
-    font-size: var(--font-xs);
     margin-bottom: 1.5vw;
+    font-size: calc(0.5rem + 0.7vw);
   }
 
-    .lets_chat p {
-    font-size: 1rem;
+  .lets_chat p {
+    font-size: calc(0.7rem + 0.5vw);
   }
 
   .lets_chat a {
-    font-size: 1rem * 2vw;
+    font-size: calc(0.7rem + 0.7vw);
   }
   }
 </style>
