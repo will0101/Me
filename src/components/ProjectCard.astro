@@ -64,6 +64,7 @@ const {
 
   div figure img {
     border-radius: 2px;
+    width: 90vw;
   }
 
 div li {
@@ -102,12 +103,18 @@ div li {
   .content__wrapper p, .content__wrapper li {
     font-family: serif;
   }
+
+  @media only screen and (min-width: 900px) {
+    div figure img {
+    width: 50vw;
+  }
+  }
   @media only screen and (min-width: 1200px) {
 
     div p,
     div li {
       line-height: var(--one-five-line-height);
-      font-size: var(--font-xs);
+      font-size: calc(1vw + 0.9rem);
     }
 
   

@@ -116,9 +116,13 @@ const { title } = Astro.props;
   }
 
   .technology__list p, .project__list p {
-    font-size: var(--font-m);
+    font-size: calc(1rem + 2vw);
     line-height: var(--one-five-line-height);
     margin: 1.25rem 0;
+  }
+
+  .project__list p {
+    max-width: 55ch;
   }
 
   div.technology__list ul {
