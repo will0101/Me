@@ -32,7 +32,7 @@
     "caption": "The migration from Admin Center being apart of the Support product to it having its' own space.",
     "description": "This was a large initiative across the company. It's probably one of the gnarliest projects I'll ever work on as an engineer. I'll keep this brief iframes are beast. Especially when they are nested!",
     "lessons": [
-      "Debugging is a skill you gain through experience. Which I'm still working on.",
+      "Debugging is a skill you gain through experience.",
       "Web applications can be as complex or simple as we make them.",
       "Iframes and CSS can be the stuff of nightmares sometimes."
     ]

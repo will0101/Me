@@ -31,18 +31,17 @@ const { company, description } = Astro.props as Props;
     animation: updown 4s ease infinite;
   }
 
-  /* a p {
+  a p {
     font-size: calc(1rem + 1.2vh);
     line-height: 2;
     color: black;
     padding: 3vw;
     background-color: white;
     text-align: left;
-  } */
+  }
 
   .icon__wrapper {
     padding: 5vh;
-    border-radius: 3px;
   }
 
   /* a p:last-of-type {
@@ -86,6 +85,9 @@ const { company, description } = Astro.props as Props;
   }
 
   @media only screen and (min-width: 1000px) {
+    a p {
+      display: none;
+    }
     svg[astro-icon="ideas42"] {
       padding: 1px;
     }
