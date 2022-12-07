@@ -114,15 +114,19 @@ const { title } = Astro.props;
   .project__list {
     padding: 1.875rem;
   }
+  
 
   .technology__list p, .project__list p {
     font-size: calc(1rem + 2vw);
     line-height: var(--one-five-line-height);
-    margin: 1.25rem 0;
+  }
+
+  .project__list p:not(:first-child) {
+    max-width: 40ch;
   }
 
   .project__list p {
-    max-width: 55ch;
+    max-width: 50ch;
   }
 
   div.technology__list ul {
@@ -147,7 +151,22 @@ const { title } = Astro.props;
     font-weight: bold;
   }
 
+  .content__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
   @media only screen and (min-width: 1000px) {
+    .content__wrapper {
+      flex-direction: row;
+    }
+
+    .odd {
+      flex-direction: row-reverse;
+    }
+   
+   
     .explanation p {
       text-align: right;
       padding-bottom: 1rem;

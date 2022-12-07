@@ -48,9 +48,11 @@ const isStudio = company == "ideas42";
       }
     </ul>
   </div>
+
+  
   <div class="project__list">
     <h2>Projects</h2>
     <p>All of the projects <strong>I worked on</strong> during my time at the company.</p>
-    {projects.map((project) => <ProjectCard {...project} />)}
+    {projects.map((project, i) => <ProjectCard {...project} isEven={i % 2 == 0 ? 'even' : ''}/> )}
   </div>
 </WorkItemLayout>

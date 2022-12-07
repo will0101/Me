@@ -7,6 +7,7 @@ export interface ProjectCardProps {
   className: string;
   projectName: string;
   lessons: string[];
+  isEven: boolean;
   link: string;
 }
 
@@ -19,6 +20,7 @@ const {
   className,
   lessons,
   link,
+  isEven
 } = Astro.props as ProjectCardProps;
 ---
 
@@ -35,7 +37,7 @@ const {
     }
   </h3>
 
-  <div class="content__wrapper">
+  <div class={`content__wrapper ${isEven ? '' : 'odd'}`}>
     <figure>
       <img src={`/src/data/${media}`} alt={alt} />
       <figcaption>{caption}</figcaption>
@@ -68,7 +70,6 @@ const {
   }
 
 div li {
-  margin: 1.25rem 0;
   font-size: var(--font-m);
     line-height: var(--one-five-line-height);
 }
@@ -104,10 +105,10 @@ div li {
     font-family: serif;
   }
 
-  @media only screen and (min-width: 900px) {
+  @media only screen and (min-width: 1000px) {
     div figure img {
-    width: 50vw;
-  }
+      width: 50vw;
+    }
   }
   @media only screen and (min-width: 1200px) {
 
@@ -115,12 +116,6 @@ div li {
     div li {
       line-height: var(--one-five-line-height);
       font-size: calc(1vw + 0.9rem);
-    }
-
-  
-    .content__wrapper div {
-      margin-left: 1.25rem;
-      margin-top: 1.25rem;
     }
   }
 
