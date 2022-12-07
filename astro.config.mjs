@@ -16,6 +16,6 @@ export default defineConfig({
   ['https://williambogans.dev/work/ideas42/', 
   'https://williambogans.dev/work/zendesk/']}), compress(), image()],
   site: "https://www.williambogans.dev",
-  output: "server",
+  // output: "server",
   adapter: netlify()
 });
