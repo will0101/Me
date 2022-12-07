@@ -8,8 +8,11 @@ import compress from "astro-compress";
 import netlify from "@astrojs/netlify/functions";
 
 // https://astro.build/config
+import image from "@astrojs/image";
+
+// https://astro.build/config
 export default defineConfig({
-  integrations: [sitemap(), compress()],
+  integrations: [sitemap(), compress(), image()],
   site: "https://www.williambogans.dev",
   output: "server",
   adapter: netlify()
