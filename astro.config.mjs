@@ -12,7 +12,9 @@ import image from "@astrojs/image";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [sitemap(), compress(), image()],
+  integrations: [sitemap({customPages: 
+  ['https://williambogans.dev/work/ideas42/', 
+  'https://williambogans.dev/work/zendesk/']}), compress(), image()],
   site: "https://www.williambogans.dev",
   output: "server",
   adapter: netlify()
