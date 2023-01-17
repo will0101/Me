@@ -1,0 +1,128 @@
+---
+import { Image } from '@astrojs/image/components';
+export interface ProjectCardProps {
+  media: string;
+  alt: string;
+  caption: string;
+  description: string;
+  className: string;
+  projectName: string;
+  lessons: string[];
+  isEven: boolean;
+  link: string;
+}
+
+const {
+  projectName,
+  media,
+  description,
+  alt,
+  caption,
+  className,
+  lessons,
+  link,
+  isEven
+} = Astro.props as ProjectCardProps;
+---
+
+<div class={className}>
+  <h3 class="card__title">
+    {
+      link ? (
+        <a target="_blank" href={link}>
+          {projectName}
+        </a>
+      ) : (
+        projectName
+      )
+    }
+  </h3>
+
+  <div class={`content__wrapper ${isEven ? '' : 'odd'}`}>
+    <figure>
+      <img src={`/assets/${media}`} alt={alt} />
+      <figcaption>{caption}</figcaption>
+    </figure>
+
+    <div>
+      <p set:html={description} />
+      <ul>
+        <h4>Takeaways</h4>
+        {lessons && lessons.map((item) => <li>{item}</li>)}
+      </ul>
+    </div>
+  </div>
+</div>
+
+<style>
+  div:not(:last-of-type) {
+    margin-bottom: 6.25rem;
+  }
+
+  h3.card__title {
+    margin: 0 auto;
+    margin: 2.5rem 0;
+    font-size: var(--font-m);
+  }
+
+  div figure img {
+    border-radius: 2px;
+    width: 90vw;
+  }
+
+div li {
+  font-size: var(--font-m);
+    line-height: var(--one-five-line-height);
+}
+  div figure {
+    position: relative;
+    margin-bottom: 1.25rem;
+    width: min-content;
+    display: flex;
+  }
+
+  figure figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0.938rem;
+    text-align: center;
+    color: white;
+  }
+
+  div ul {
+    margin-top: 1.25rem;
+    text-align: left;
+  }
+
+  div ul li::before {
+    content: "-";
+    padding-inline-end: 0.313rem;
+  }
+
+  .content__wrapper p, .content__wrapper li {
+    font-family: serif;
+  }
+
+  @media only screen and (min-width: 1000px) {
+    div figure img {
+      width: 50vw;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+
+    div p,
+    div li {
+      line-height: var(--one-five-line-height);
+      font-size: calc(1vw + 0.9rem);
+    }
+  }
+
+  @media screen and (min-width: 900px) and (min-height: 1100px) {
+    .content__wrapper {
+      flex-direction: column;
+    }
+  }
+</style>

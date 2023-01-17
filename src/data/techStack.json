@@ -1,0 +1,132 @@
+[
+  {
+    "name": "React.js",
+    "website": "https://reactjs.org/",
+    "companies": ["zendesk", "ideas42"]
+  },
+  {
+    "name": "Ruby on Rails",
+    "website": "https://rubyonrails.org/",
+    "companies": ["zendesk", "ideas42"]
+  },
+  {
+    "name": "Node.js",
+    "website": "https://nodejs.org/en/",
+    "companies": ["zendesk"]
+  },
+  {
+    "name": "Ember.js",
+    "website": "https://emberjs.com/",
+    "companies": ["zendesk"]
+  },
+  {
+    "name": "Styled Components",
+    "website": "https://styled-components.com/",
+    "companies": ["zendesk"]
+  },
+  {
+    "name": "Cypress",
+    "website": "https://www.cypress.io/",
+    "companies": ["zendesk", "ideas42"]
+  },
+  {
+    "name": "Yeoman Generator",
+    "website": "https://yeoman.io/",
+    "companies": ["zendesk"]
+  },
+  {
+    "name": "Jest",
+    "website": "https://jestjs.io/",
+    "companies": ["zendesk", "ideas42"]
+  },
+  {
+    "name": "React Testing Library",
+    "website": "https://testing-library.com",
+    "companies": ["ideas42", "ideas42"]
+  },
+  {
+    "name": "Zendesk Garden",
+    "website": "https://garden.zendesk.com/",
+    "companies": ["zendesk"]
+  },
+  {
+    "name": "Datadog",
+    "website": "https://www.datadoghq.com/",
+    "companies": ["zendesk"]
+  },
+  {
+    "name": "Redux",
+    "website": "https://redux.js.org/",
+    "companies": ["zendesk", "ideas42"]
+  },
+  {
+    "name": "XState",
+    "website": "https://xstate.js.org/docs/",
+    "companies": ["ideas42"]
+  },
+  {
+    "name": "TypeScript",
+    "website": "https://www.typescriptlang.org/",
+    "companies": ["ideas42", "zendesk"]
+  },
+  {
+    "name": "Eleventy",
+    "website": "https://www.11ty.dev/",
+    "companies": ["ideas42"]
+  },
+  {
+    "name": "Gatsby.js",
+    "website": "https://www.gatsbyjs.com/",
+    "companies": ["ideas42"]
+  },
+  {
+    "name": "Sentry",
+    "website": "https://sentry.io/welcome/",
+    "companies": ["ideas42", "zendesk"]
+  },
+  {
+    "name": "Storybook",
+    "website": "https://storybook.js.org/",
+    "companies": ["ideas42", "zendesk"]
+  },
+  {
+    "name": "PostgreSQL",
+    "website": "https://www.postgresql.org/",
+    "companies": ["ideas42"]
+  },
+  {
+    "name": "Docker",
+    "website": "https://www.docker.com/",
+    "companies": ["zendesk", "ideas42"]
+  },
+  {
+    "name": "Express.js",
+    "website": "https://expressjs.com/",
+    "companies": ["ideas42"]
+  },
+  {
+    "name": "Heroku",
+    "website": "https://www.heroku.com/",
+    "companies": ["ideas42"]
+  },
+  {
+    "name": "Github",
+    "website": "https://github.com/",
+    "companies": ["ideas42", "zendesk"]
+  },
+  {
+    "name": "Ionic",
+    "website": "https://ionicframework.com/docs/",
+    "companies": ["ideas42"]
+  },
+  {
+    "name": "CapacitorJS",
+    "website": "https://capacitorjs.com/",
+    "companies": ["ideas42"]
+  },
+  {
+    "name": "GhostCMS",
+    "website": "https://ghost.org/",
+    "companies": ["ideas42"]
+  }
+]

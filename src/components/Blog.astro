@@ -1,0 +1,70 @@
+---
+// const personalPosts = await Astro.glob('../posts/personal/*.md')
+// const technicalPosts = await Astro.glob('../posts/technical/*.md')
+---
+
+<section class="blog">
+  <h2>Blog</h2>
+
+  <p>
+    I rite and <span>sometimes</span> it's <span class="legible">legible.</span>
+  </p>
+
+  <div class="content__wrapper"></div>
+</section>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap");
+
+  section {
+    height: clamp(fit-content);
+  }
+  .blog {
+    background-color: var(--primary-dark);
+    color: white;
+  }
+
+  .content__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 10%;
+  }
+
+  .content__wrapper ul:first-of-type li:last-child {
+    margin-bottom: 12.5rem;
+  }
+
+  .blog h2 {
+    font-size: calc(var(--font-xl) * 1.9);
+    font-family: "Reenie Beanie", cursive;
+  }
+
+  section p {
+    font-family: "Reenie Beanie", cursive;
+    opacity: var(--opacity-8);
+    padding: 0 1.25rem;
+    font-size: calc(var(--font-l) * 2);
+    margin-top: 5%;
+  }
+
+  p span:first-of-type {
+    text-decoration: underline;
+  }
+
+  section h3 {
+    font-size: calc(var(--font-l) + 1vw);
+    font-weight: bold;
+    margin-bottom: 1.25rem;
+    min-width: 10ch;
+  }
+
+  ul li {
+    font-size: var(--font-s);
+    opacity: var(--opacity-8);
+  }
+
+  a {
+    text-decoration: underline;
+  }
+</style>

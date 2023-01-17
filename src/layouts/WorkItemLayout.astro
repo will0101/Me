@@ -1,0 +1,186 @@
+---
+import "reset-css";
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="William Bogans is a human first, remote software engineer. Who are you?"
+    />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+<style is:global>
+  :root {
+    --one-five-line-height: 1.5;
+    --font-xl: calc(152 / 16 * 1.8vw);
+    --font-l: calc((148 / 16 * 1vw) + 2vw);
+    --font-m: calc(1rem + 2vw);
+    --font-s: calc(1.3rem + 1.2vw);
+    --font-xs: calc(1.2rem + 1vh);
+  }
+
+  p,
+  a,
+  h2,
+  li {
+    color: white;
+  }
+
+  strong {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  h1 {
+    margin: 1.25rem 0;
+    font-size: var(--font-xl);
+  }
+
+  h2 {
+    font-size: var(--font-l);
+    margin-top: 3.125rem;
+    font-weight: 600;
+  }
+
+  h2 + p {
+    max-width: 35ch;
+  }
+
+  h3 {
+    font-weight: bold;
+  }
+
+  h4 {
+    font-size: var(--font-m);
+    margin: 1.25rem 0;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    padding: 1.875rem;
+  }
+
+  header h1 {
+    margin: 1.25rem 0;
+    font-size: var(--font-l);
+    font-weight: bold;
+    text-align: left;
+  }
+
+  header.company__box div {
+    display: flex;
+    align-items: center;
+  }
+
+  svg:first-of-type {
+    width: 40vw;
+  }
+
+  .explanation {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.25rem;
+    margin-top: 5%;
+  }
+
+  .explanation p {
+    font-size: var(--font-m);
+    max-width: 35ch;
+    line-height: 1.4;
+    padding-bottom: 5.25rem;
+    text-align: right;
+  }
+
+  .technology__list,
+  .project__list {
+    padding: 1.875rem;
+  }
+  
+
+  .technology__list p, .project__list p {
+    font-size: calc(1rem + 2vw);
+    line-height: var(--one-five-line-height);
+  }
+
+  .project__list p:not(:first-child) {
+    max-width: 40ch;
+    margin-top: 1em;
+  }
+
+  .project__list p {
+    max-width: 50ch;
+  }
+
+  div.technology__list ul {
+    column-count: 2;
+    line-height: 2.6;
+    column-gap: 0;
+    margin: 0 auto;
+  }
+
+  div.technology__list li {
+    font-size: calc(var(--font-s) + 0.3vw);
+  }
+
+  div.technology__list li a {
+    text-decoration: none;
+    padding-bottom: 0.313rem;
+    border-bottom-style: dashed;
+    border-bottom-width: 0.194rem;
+  }
+
+  div.project__list h2 {
+    font-weight: bold;
+  }
+
+  .content__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+  @media only screen and (min-width: 1000px) {
+    .content__wrapper {
+      flex-direction: row;
+    }
+
+    .odd {
+      flex-direction: row-reverse;
+    }
+   
+   
+    .explanation p {
+      text-align: right;
+      padding-bottom: 1rem;
+    }
+
+    div.technology__list ul {
+      column-count: 3;
+    }
+
+    header.company__box div {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 12.5rem;
+    }
+  }
+</style>

@@ -1,0 +1,94 @@
+---
+import { Icon } from "astro-icon";
+
+export interface Props {
+  company: string;
+  description: string;
+}
+
+const { company, description } = Astro.props as Props;
+---
+
+<a href={`/work/${company}`}>
+  <div>
+    <div class="icon__wrapper">
+      <Icon name={company} />
+    </div>
+    <p class="hidden__desktop">{description}</p>
+    <!-- <p>Please click me.</p> -->
+  </div>
+</a>
+
+<style>
+  .icon__wrapper {
+    padding: 10vh;
+  }
+
+  a > div {
+    width: 90vw;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    animation: updown 4s ease infinite;
+  }
+
+  a p {
+    font-size: calc(1rem + 1.2vh);
+    line-height: 2;
+    color: black;
+    padding: 3vw;
+    background-color: white;
+    text-align: left;
+  }
+
+  .icon__wrapper {
+    padding: 5vh;
+  }
+
+  /* Zendesk card */
+  a[href^="/work/zendesk"] .icon__wrapper {
+    background-color: rgb(3, 54, 61);
+  }
+
+  a[href^="/work/zendesk"] > div {
+    box-shadow: var(--box-shadow) rgb(3, 54, 61, 0.6);
+  }
+
+  svg[astro-icon="zendesk"] {
+    fill: white;
+  }
+
+  /* Ideas42 card */
+  a[href^="/work/ideas42"] .icon__wrapper {
+    background-color: rgb(29, 114, 226);
+  }
+
+  a[href^="/work/ideas42"] > div {
+    box-shadow: var(--box-shadow) rgba(29, 114, 226, 0.4);
+  }
+
+  @keyframes updown {
+    0% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(20px);
+    }
+
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    a p {
+      display: none;
+    }
+    svg[astro-icon="ideas42"] {
+      padding: 1px;
+    }
+    a p {
+      text-align: center;
+    }
+  }
+</style>

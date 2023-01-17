@@ -1,0 +1,1 @@
+- We may have to tell netlify where the images are in src so they can be outputted in dist

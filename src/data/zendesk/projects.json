@@ -1,0 +1,62 @@
+[
+  {
+    "className": "acf-support",
+    "projectName": "Admin Center Framework Support",
+    "media": "zendesk/acf-support.gif",
+    "alt": "A gif of the Cypress Test Runner doing it's thing.",
+    "caption": "The Cypress test runner running in headed mode.",
+    "description": "One of my first assignments at the company was to write regression tests. We were in the middle of a migration of over 20+ pages over to a new part of our site. These regression tests were written in Cypress. We were able to catch and fix many different bugs during this migration because of these tests. During this time, I learned how to write Cypress specs and the value of having regression tests.",
+    "lessons": [
+      "Cypress specs can get flaky. Double check you're rendering your data efficiently though.",
+      "Before any code is written your team should agree on a pattern for the specs. If it's that repetitive write a code generator for it.",
+      "Have clear communication on what needs to be tested and why."
+    ]
+  },
+  {
+    "className": "acf-email",
+    "projectName": "Admin Center Framework Email",
+    "media": "zendesk/acf-email.png",
+    "alt": "The Admin Center Framework Email UI",
+    "caption": "Admin Center Framework Emails' User Interface",
+    "description": "I fixed a couple of React bugs in another teams project before it was generally available for public consumption.",
+    "lessons": [
+      "Debugging is a skill you gain through experience. Which I'm still working on.",
+      "When asking for help be explicit about what you've tried, what you think the problem is, and what you think the solution is."
+    ]
+  },
+  {
+    "className": "project-chonk",
+    "projectName": "Project Chonk",
+    "media": "zendesk/support-admin.png",
+    "alt": "Admin Center in the Support product. Admin Center in its' own location.",
+    "caption": "The migration from Admin Center being apart of the Support product to it having its' own space.",
+    "description": "This was a large initiative across the company. It's probably one of the gnarliest projects I'll ever work on as an engineer. I'll keep this brief iframes are beast. Especially when they are nested!",
+    "lessons": [
+      "Debugging is a skill you gain through experience.",
+      "Web applications can be as complex or simple as we make them.",
+      "Iframes and CSS can be the stuff of nightmares sometimes."
+    ]
+  },
+  {
+    "className": "zendesk-acf",
+    "projectName": "Admin Center Framework Generator",
+    "media": "zendesk/cli.gif",
+    "alt": "A gif of a command line interface application doing cli stuff",
+    "caption": "An example of what a CLI does if you are not a nerd like me.",
+    "description": "This is a module/project generator. This generator gives teams across the company that are building admin pages the ability to cut their setup time in half. We automated everything that we could to speed up the process of adding a new project to the Admin Center.",
+    "lessons": [
+      "Projects are fun when everyone wants to work on it!",
+      "Engineering teams should get the space to be creative and innovate on old processes."
+    ]
+  },
+  {
+    "className": "acf-triggers",
+    "projectName": "Admin Center Framework Triggers",
+    "media": "zendesk/triggers.png",
+    "caption": "The Triggers Zendesk product",
+    "description": "Our team was given the honor to rewrite anothers teams project. While working on this project there were times when I would have to fix a bug in the system itself.",
+    "lessons": [
+      "Put a link on my calendly to chat."
+    ]
+  }
+]

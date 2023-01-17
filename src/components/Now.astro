@@ -1,0 +1,121 @@
+<section class="now">
+  <h2>Now</h2>
+  <!-- <p>What am I up to?</p> -->
+  <ul class="now__wrapper">
+    <li>
+      Working with <a
+        href="https://www.ideas42ventures.com/"
+        target="_blank"
+        class="red__text">ideas42 ventures.</a
+      >
+    </li>
+    <li>
+      Becoming acquainted with the <a
+        class="red__text"
+        target="_blank"
+        href="https://guides.rubyonrails.org/index.html">Rails</a
+      > ecosystem.
+    </li>
+    <li>
+      Learning about the world of <a
+        target="_blank"
+        href="https://www.earth.com/earthpedia-articles/a-beginners-guide-to-mycology/"
+        class="green__text">mycology.</a
+      >
+    </li>
+    <li>
+      Learning about use cases of <a
+        class="green__text"
+        href="https://www.healthline.com/health/hemp-vs-marijuana#marijuana"
+        target="_blank">hemp.</a
+      >
+    </li>
+    <li>
+      Finding my place in this <span class="blue__text"
+        >beautiful world each day.</span
+      >
+    </li>
+    <li>
+      Curious about anything, just <a
+        class="blue__text"
+        href="https://calendly.com/wmb-iii/chat-with-the-kool-kat"
+        target="_blank">pull up on me.</a
+      >
+    </li>
+
+    <li class="blue__text ass">
+      NEVER <a
+        class="blue__text"
+        href="https://www.urbandictionary.com/define.php?term=Assume"
+        target="_blank">assume!</a
+      >
+    </li>
+  </ul>
+</section>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+
+  section h2 {
+    font-family: "Alfa Slab One", cursive;
+  }
+
+  /* section p {
+    font-size: var(--font-m);
+    opacity: 0.5;
+    margin:  calc(var(--margin-sm) * 2);
+  } */
+
+  .now__wrapper {
+    border: 5px dashed black;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 1.5em;
+    margin-bottom: 18.75rem;
+    line-height: 2.2;
+    padding: 1rem;
+    margin: 0 1.125rem;
+    margin-bottom: 12.5rem;
+  }
+
+  .now__wrapper a {
+    text-decoration: underline;
+  }
+
+  .now__wrapper li {
+    font-size: var(--font-s);
+  }
+
+  .now__wrapper li:nth-of-type(1)::before {
+    content: "🛠 ";
+  }
+
+  .now__wrapper li:nth-of-type(2)::before {
+    content: "🚄 ";
+  }
+
+  .now__wrapper li:nth-of-type(3)::before {
+    content: "🍄 ";
+  }
+
+  .now__wrapper li:nth-of-type(4)::before {
+    content: "🌱 ";
+  }
+
+  .now__wrapper li:nth-of-type(5)::before {
+    content: "🌍 ";
+  }
+  ul li:nth-of-type(6)::before {
+    content: "> ";
+  }
+
+  .ass {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: calc(var(--font-s) * 0.5);
+  }
+  .ass a {
+    text-decoration: underline;
+  }
+</style>

@@ -1,0 +1,138 @@
+---
+import WorkItemLayout from "../../layouts/WorkItemLayout.astro";
+import projects from "../../data/zendesk/projects.json";
+import ProjectPage from "../../components/ProjectPage.astro";
+---
+
+<WorkItemLayout title="William - Zendesk career stint page">
+  <ProjectPage title="Zortfolio" projects={projects} company="zendesk" />
+</WorkItemLayout>
+
+<style is:global>
+  /* The general styles for this page */
+  @import url("https://fonts.cdnfonts.com/css/sharp-sans");
+
+  body {
+    --zen-green: rgb(3, 54, 61);
+    --zen-primary: #228f67;
+    --zen-secondary: #00a656;
+    --zen-tertiary: #f6c8be;
+    --text-color: #fed6a8;
+    font-family: "Sharp Sans", sans-serif;
+  }
+
+  strong {
+    color: var(--zen-tertiary);
+  }
+
+  /* HEADER  */
+  .company__box svg {
+    fill: var(--text-color);
+    width: 50vw;
+    margin-left: 22%;
+  }
+
+  h1 {
+    color: var(--zen-tertiary);
+    max-width: 10ch;
+  }
+
+  header {
+    position: relative;
+  }
+
+  header::before {
+    content: "";
+    background-image: url("/src/icons/zendesk.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+    background-size: contain;
+    background-origin: content-box;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+    padding: 0.5em;
+  }
+
+  h2 {
+    color: var(--zen-tertiary);
+  }
+
+  h3 {
+    color: var(--text-color);
+  }
+
+  h4 {
+    color: var(--zen-secondary);
+    font-weight: bold;
+  }
+
+  .company__box {
+    background-color: #028079;
+  }
+
+  .company__box div {
+    flex-direction: column;
+  }
+
+  .explanation {
+    position: relative;
+  }
+
+  .explanation p {
+    font-weight: bold;
+    opacity: 1;
+    max-width: 30ch;
+  }
+
+  /* The project and technology list */
+
+  .technology__list,
+  .project__list {
+    background-color: var(--zen-green);
+  }
+
+  div.technology__list li a {
+    border-bottom-color: var(--zen-tertiary);
+  }
+
+  div ul li::before {
+    color: var(--zen-secondary);
+  }
+
+  @media only screen and (min-width: 1000px) {
+
+    div figure img {
+      width: 90vw;
+    }
+    .content__wrapper  {
+      display: block;
+    }
+  }
+
+  /* Mobile styles */
+  @media only screen and (min-width: 900px) {
+
+    header h1 {
+      font-size: var(--font-l);
+    }
+    .company__box svg {
+      width: 50vw;
+    }
+
+    header::before {
+      padding: 2em;
+    }
+
+    .explanation {
+      flex-direction: column;
+    }
+
+    .explanation p {
+      font-size: var(--font-s);
+    }
+  }
+</style>

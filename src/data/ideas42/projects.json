@@ -1,0 +1,53 @@
+[
+  {
+    "className": "studio-website",
+    "projectName": "Ideas42 Website",
+    "link": "https://www.ideas42ventures.com",
+    "media": "ideas42/studio_landing.png",
+    "alt": "The ideas42 marking website",
+    "caption": "The marketing website for ideas42 ventures",
+    "description": "This the marketing website. I helped build this site twice. Once in Eleventy + Nunjucks and another in Gatsby.js.",
+    "lessons": [
+      "Having a design system is critical to move fast as an engineering team.",
+      "Get your linting/code enforcement tools setup early."
+    ]
+  },
+  {
+    "className": "vergil",
+    "projectName": "Vergil",
+    "link": "https://www.vergil.app/",
+    "media": "ideas42/vergil_home.png",
+    "alt": "The home screen of Vergil",
+    "caption": "The entry point to the Vergil application",
+    "description": "Did you know it cost more money to keep people in prison than to free them? Vergil is an application with the goal of reducing recidivism. While working on Vergil I worked with the CEO to build out an application that would allow returning citizens to integrate back into society.",
+    "lessons": [
+      "Have high level architecture meetings early and often.",
+      "We need to make time for engineers to slow down and ask, does this make sense? Deliverables are CooL, but sustainability is better.",
+      "I think as engineers we should pushback on designs more often. Does this need to be an 'X' component when it could be a simpler 'Y' component?"
+    ]
+  },
+  {
+    "className": "wellmoney",
+    "projectName": "WellMoney",
+    "link": "https://well-money.com/",
+    "media": "ideas42/wellmoney_home.svg",
+    "alt": "The WellMoney app home page",
+    "caption": "The WellMoney Dashboard where you can see metrics about the app",
+    "description": "The premise here is that folks need moniez. But sometimes, to get you have to give. This is a platform where people can sign up to contribute to a pot of money (a PayPal account). People can request money as well, and upon approval it will be distributed to them.",
+    "lessons": [
+      "Your set of product requirements should determine the technology choice."
+    ]
+  },
+  {
+    "className": "prosperworks",
+    "projectName": "ProsperWorks",
+    "link": "https://www.getprosperworks.com/",
+    "media": "ideas42/prosperworks_home.svg",
+    "alt": "The ProsperWorks To Do Item dashboard",
+    "caption": "The ProsperWorks To Do Item dashboard",
+    "description": "ProsperWorks is an application that allows small businesses owners and their employees to have a shared vision. We do this by assigning To Do items to team members and goals to teams.",
+    "lessons": [
+      "Put a link on my calendly to chat."
+    ]
+  }
+]

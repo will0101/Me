@@ -1,0 +1,58 @@
+---
+import Icon from "astro-icon";
+import ProjectCard from "./ProjectCard.astro";
+import WorkItemLayout from "../layouts/WorkItemLayout.astro";
+
+import techStack from "../data/techStack.json";
+
+export interface ProjectPageProps {
+  company: string;
+  title: string;
+  projects: [{}];
+}
+
+const { company, title, projects } = Astro.props as ProjectPageProps;
+
+const technologies = techStack
+  .filter((tech) => tech.companies.includes(company))
+  .sort((a, b) => a.name.localeCompare(b.name));
+
+const isStudio = company == "ideas42";
+---
+
+<WorkItemLayout title="William - Zendesk career stint page">
+  <header class="company__box">
+    {isStudio && <Icon name={company} />}
+    <div class="explanation">
+      <h1>The {title}</h1>
+      <p>The projects and tech I worked with while I was there.</p>
+    </div>
+    {isStudio && <Icon name="idea-circle" />}
+  </header>
+
+  <div class="technology__list">
+    <h2>Tech Stack</h2>
+    <p>
+      These are all the technologies I <strong>remember</strong> working with while
+      there.
+    </p>
+    <ul>
+      {
+        technologies.map((technology) => (
+          <li>
+            <a target="_blank" href={technology.website}>
+              {technology.name}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+
+  
+  <div class="project__list">
+    <h2>Projects</h2>
+    <p>All of the projects <strong>I worked on</strong> during my time at the company.</p>
+    {projects.map((project, i) => <ProjectCard {...project} isEven={i % 2 == 0 ? 'even' : ''}/> )}
+  </div>
+</WorkItemLayout>
