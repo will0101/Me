@@ -10,6 +10,16 @@
     "companies": ["zendesk", "ideas42"]
   },
   {
+    "name": "Render",
+    "website": "https://render.com/",
+    "companies": ["ideas42"]
+  },
+  {
+    "name": "Nunjucks",
+    "website": "https://mozilla.github.io/nunjucks/",
+    "companies": ["ideas42"]
+  },
+  {
     "name": "Node.js",
     "website": "https://nodejs.org/en/",
     "companies": ["zendesk"]
